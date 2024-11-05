@@ -30,17 +30,17 @@ public class PlayerMovement : MonoBehaviour
         if (Mathf.Abs(yInput) > 0) {
             body.velocity = new Vector2(body.velocity.x, yInput * speed);
         }
-
-        Flip();
+        if (isLookingRight && xInput < 0f || !isLookingRight && xInput > 0f)
+        {
+            Flip();
+        }
     }
 
     private void Flip() {
-        if (isLookingRight && xInput < 0f || !isLookingRight && xInput > 0f) {
-            isLookingRight = !isLookingRight;
-            Vector3 localScale = transform.localScale;
-            localScale.x *= -1f;
-            transform.localScale = localScale;
-        }
+        isLookingRight = !isLookingRight;
+        Vector3 localScale = transform.localScale;
+        localScale.x *= -1f;
+        transform.localScale = localScale;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
