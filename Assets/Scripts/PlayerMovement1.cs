@@ -98,6 +98,7 @@ public class PlayerMovement1 : MonoBehaviour
             body.gravityScale = waterGravityScale;
             canMove = true;
         }
+
     }
 
     private void OnTriggerExit2D(Collider2D other)
@@ -110,6 +111,16 @@ public class PlayerMovement1 : MonoBehaviour
             body.gravityScale = normalGravityScale;
             canMove = false;
         }
+    }
+
+    private void OnCollisionEnter2D(Collision2D other)
+
+    {
+        if (other.gameObject.CompareTag("ground") && canMove == false)
+        {
+            ReloadScene();
+        }
+
     }
 
     private void ReloadScene()
