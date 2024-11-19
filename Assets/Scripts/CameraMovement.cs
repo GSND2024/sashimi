@@ -6,6 +6,7 @@ public class CameraMovement : MonoBehaviour
 {
  public Camera cam;
  public GameObject player;
+ public int roomCounter = 1;
 
 void Start()
 {
@@ -37,7 +38,13 @@ IEnumerator moveToX(Transform fromPosition, float duration)
     //Get the current position of the object to be moved
     Vector3 startPos = fromPosition.position;
     Vector3 toPosition = fromPosition.position;
-    toPosition.x += 2f * cam.orthographicSize * cam.aspect;
+    //dynamic position
+    //toPosition.x += 2f * cam.orthographicSize * cam.aspect;
+    //hard code for now
+    toPosition.x += 20;
+    if (roomCounter == 2) {
+        toPosition.y += 3.5f;
+    }
 
     while (counter < duration)
     {
@@ -45,7 +52,7 @@ IEnumerator moveToX(Transform fromPosition, float duration)
         fromPosition.position = Vector3.Lerp(startPos, toPosition, counter / duration);
         yield return null;
     }
-
+    roomCounter++;
     isMoving = false;
 }
 }

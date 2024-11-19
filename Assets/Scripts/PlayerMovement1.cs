@@ -47,6 +47,7 @@ public class PlayerMovement1 : MonoBehaviour
         }
         if (!inWater)
         {
+            /**
             if (Input.GetKey(KeyCode.Space))
             {
                 StartGliding();
@@ -55,6 +56,7 @@ public class PlayerMovement1 : MonoBehaviour
             {
                 StopGliding();
             }
+            **/
         }
         else
         {
