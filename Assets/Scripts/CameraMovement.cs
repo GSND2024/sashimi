@@ -16,7 +16,7 @@ void Start()
     
     cameraHeight = 2f * cam.orthographicSize; // Height in world units
     cameraWidth = cameraHeight * cam.aspect;  // Width in world units (height × aspect ratio)
-
+    Debug.Log(cameraWidth);
     //StartCoroutine(moveToX(cam.transform, 1.0f));
 }
 
@@ -27,10 +27,10 @@ void Update()
         StartCoroutine(moveTo(cam.transform, 1.0f));
     }
 
-    if (player.transform.position.x < (cam.transform.position.x - cameraWidth/2))
-    {
-        StartCoroutine(moveBack(cam.transform, 1.0f));
-    }
+    //if (player.transform.position.x < (cam.transform.position.x - cameraWidth/2))
+    //{
+     //   StartCoroutine(moveBack(cam.transform, 1.0f));
+    //}
 }
 
 
