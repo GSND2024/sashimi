@@ -5,12 +5,16 @@ using UnityEngine;
 public class NewBehaviourScript : MonoBehaviour
 {
     public GameObject door;
+    public GameObject spawn = null;
     
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Player") || other.gameObject.CompareTag("rock"))
         {
            door.SetActive(false);
+           if (spawn != null) {
+            spawn.SetActive(true);
+           }
         }
     }
 
@@ -20,6 +24,9 @@ public class NewBehaviourScript : MonoBehaviour
         if (other.gameObject.CompareTag("Player") || other.gameObject.CompareTag("rock"))
         {
             door.SetActive(true);
+            if (spawn != null) {
+                spawn.SetActive(false);
+            }
         }
     }
 

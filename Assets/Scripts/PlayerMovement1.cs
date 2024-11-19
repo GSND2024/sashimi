@@ -19,7 +19,7 @@ public class PlayerMovement1 : MonoBehaviour
     public Rigidbody2D body;
 
     private bool isLookingRight = false;
-    private bool canMove = true;
+    private bool inWater = true;
 
     // Start is called before the first frame update
     void Start()
@@ -45,7 +45,7 @@ public class PlayerMovement1 : MonoBehaviour
         {
             Flip();
         }
-        if (!canMove)
+        if (!inWater)
         {
             if (Input.GetKey(KeyCode.Space))
             {
@@ -90,16 +90,23 @@ public class PlayerMovement1 : MonoBehaviour
         body.gravityScale = normalGravityScale; // Restore normal gravity
     }
 
+    private void OnTriggerStay2D(Collider2D other) {
+        inWater = true;
+        body.gravityScale = waterGravityScale;
+    }
+
+    /**
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("water"))
         {
             //Debug.Log("Player entered the background area");
             body.gravityScale = waterGravityScale;
-            canMove = true;
+            inWater = true;
         }
 
     }
+    **/
 
     private void OnTriggerExit2D(Collider2D other)
     {
@@ -109,14 +116,14 @@ public class PlayerMovement1 : MonoBehaviour
             //Debug.Log("Player exited the background area");
             body.velocity = new Vector2(body.velocity.x, yInput * jumpSpeed);
             body.gravityScale = normalGravityScale;
-            canMove = false;
+            inWater = false;
         }
     }
 
     private void OnCollisionEnter2D(Collision2D other)
 
     {
-        if (other.gameObject.CompareTag("ground") && canMove == false)
+        if (other.gameObject.CompareTag("ground") && inWater == false)
         {
             ReloadScene();
         }

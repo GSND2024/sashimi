@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3505482520661887791}
   - component: {fileID: 4155495830972077569}
   m_Layer: 0
-  m_Name: Ground
+  m_Name: killBox
   m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -71,11 +71,11 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1206157103
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.5943396, g: 0.32400268, b: 0.21586862, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

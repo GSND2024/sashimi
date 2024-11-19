@@ -9,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
     public float xInput;
     public float yInput;
     private bool isLookingRight = false;
-    private bool canMove = true;
+    private bool inWater = true;
 
     // Start is called before the first frame update
     void Start()
@@ -20,7 +20,7 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!canMove) return;
+        if (!inWater) return;
         xInput = Input.GetAxis("Horizontal");
         yInput = Input.GetAxis("Vertical");
 
@@ -34,6 +34,13 @@ public class PlayerMovement : MonoBehaviour
         {
             Flip();
         }
+
+        Debug.Log("here");
+        if (inWater) {
+            body.gravityScale = 0;
+        } else if (!inWater) {
+            body.gravityScale = 10;
+        }
     }
 
     private void Flip() {
@@ -43,24 +50,29 @@ public class PlayerMovement : MonoBehaviour
         transform.localScale = localScale;
     }
 
+    private void OnTriggerStay2d(Collider2D other) {
+        if (other.gameObject.CompareTag("water")) {
+            inWater = true;
+        }
+    }
+
+    /**
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("water"))
         {
             //Debug.Log("Player entered the background area");
-            body.gravityScale = 0;
-            canMove = true;
+            inWater = true;
         }
     }
-
+    **/
     private void OnTriggerExit2D(Collider2D other)
     {
        // Check if the player exits the background area
         if (other.gameObject.CompareTag("water"))
         {
             //Debug.Log("Player exited the background area");
-            body.gravityScale = 10;
-            canMove = false;
+            inWater = false;
         }
     }
 
