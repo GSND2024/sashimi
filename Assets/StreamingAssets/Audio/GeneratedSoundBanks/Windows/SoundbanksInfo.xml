@@ -22,7 +22,7 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="3342588750" Type="User" Language="SFX" Hash="{298A157B-6613-3DBD-42F1-EE732D5EF7EC}">
+		<SoundBank Id="3342588750" Type="User" Language="SFX" Hash="{1DD3C44B-D080-E4D6-3CC9-4A7606A937C3}">
 			<ShortName>All_SFX</ShortName>
 			<Path>All_SFX.bnk</Path>
 			<Media>
@@ -72,7 +72,7 @@
 				</File>
 				<File Id="673442626" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>common_env_water fall_flow_01.wav</ShortName>
-					<CachePath>SFX/common_env_water fall_flow_01_8F8B27E2.wem</CachePath>
+					<CachePath>SFX/common_env_water fall_flow_01_20C97FAC.wem</CachePath>
 				</File>
 				<File Id="685455157" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>title_ui_settingsmenu_unpause_01.wav</ShortName>
@@ -120,7 +120,7 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="2750027184" Name="Play_common_env_water_fall_flow_01" DurationType="OneShot" DurationMin="8" DurationMax="8">
+				<Event Id="2750027184" Name="Play_common_env_water_fall_flow_01" MaxAttenuation="100" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="673442626"/>
 					</MediaRefs>
@@ -206,5 +206,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{57041770-C422-FBCA-9F47-88E612D3BE2C}</FileHash>
+	<FileHash>{616C65A6-26FC-C5D7-87F8-AAEA673501EB}</FileHash>
 </SoundBanksInfo>

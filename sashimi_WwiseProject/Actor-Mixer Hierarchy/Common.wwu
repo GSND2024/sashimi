@@ -584,13 +584,18 @@
 						<Sound Name="common_env_water fall_flow_01" ID="{FEE5BA5E-A293-4412-B615-D0F269452CEB}" ShortID="493452825">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-9</Value>
+										<Value>-12</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Waterfall_Attn" ID="{94154590-8566-4BE2-9883-32AB0F770874}" WorkUnitID="{DAEE861B-B83C-4E12-AB7B-24A02525A98B}"/>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42EE29DA-23E4-444A-A257-03EBA0E86A95}"/>
 								</Reference>
@@ -600,6 +605,9 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="common_env_water fall_flow_01" ID="{13AAEC0D-F390-45E4-A336-9E2890904E02}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>common_env_water fall_flow_01.wav</AudioFile>
 									<MediaIDList>
