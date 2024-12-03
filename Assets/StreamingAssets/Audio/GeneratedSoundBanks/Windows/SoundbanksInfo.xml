@@ -22,7 +22,7 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="3342588750" Type="User" Language="SFX" Hash="{91FDDCF7-010F-79D0-C7FB-39F3E56FF3E1}">
+		<SoundBank Id="3342588750" Type="User" Language="SFX" Hash="{940A80C0-A0B5-94CF-815A-AD3AEC021B63}">
 			<ShortName>All_SFX</ShortName>
 			<Path>All_SFX.bnk</Path>
 			<Media>
@@ -120,7 +120,7 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="2750027184" Name="Play_common_env_water_fall_flow_01" MaxAttenuation="20" DurationType="Infinite">
+				<Event Id="2750027184" Name="Play_common_env_water_fall_flow_01" MaxAttenuation="12" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="673442626"/>
 					</MediaRefs>
@@ -206,5 +206,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{4970196A-3514-9FBB-5BA8-5841D9AE6FC3}</FileHash>
+	<FileHash>{BEF07F26-1F44-7191-4B9F-0A147BB47F61}</FileHash>
 </SoundBanksInfo>
