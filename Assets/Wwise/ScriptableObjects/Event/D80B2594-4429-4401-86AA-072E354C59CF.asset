@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2edd960f94d1852439cc26d163399f6f, type: 3}
+  m_Name: D80B2594-4429-4401-86AA-072E354C59CF
+  m_EditorClassIdentifier: 
+  objectName: Play_title_ui_menu_nav_01
+  id: 3848493319
+  guid: D80B2594-4429-4401-86AA-072E354C59CF

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="150">
+	<RootPaths>
+		<ProjectRoot>../../../../../sashimi_WwiseProject</ProjectRoot>
+		<SourceFilesRoot>../../../../../sashimi_WwiseProject/.cache/Mac</SourceFilesRoot>
+		<SoundBanksRoot>.</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>../../../../../sashimi_WwiseProject/GeneratedSoundBanks/Mac</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{D326F752-7CA2-0A14-FDB1-63ECE89D0199}">
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+			<Plugins>
+				<AudioDevices>
+					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
+					<Plugin Id="3859886410" Name="System" LibName="System" LibId="11403271"/>
+				</AudioDevices>
+			</Plugins>
+			<Busses>
+				<Bus Id="3803692087" Name="Master Audio Bus"/>
+			</Busses>
+		</SoundBank>
+		<SoundBank Id="3342588750" Type="User" Language="SFX" Hash="{D2AA57F5-6555-0A13-F9E9-643ACB6B934C}">
+			<ShortName>All_SFX</ShortName>
+			<Path>All_SFX.bnk</Path>
+			<Media>
+				<File Id="105382696" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>title_ui_settingsmenu_pause_01.wav</ShortName>
+					<CachePath>SFX/title_ui_settingsmenu_pause_01_8F8B27E2.wem</CachePath>
+				</File>
+				<File Id="147384092" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>common_plr_player_swim_01.wav</ShortName>
+					<CachePath>SFX/common_plr_player_swim_01_98AA959E.wem</CachePath>
+				</File>
+				<File Id="183307966" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>common_plr_player_dive_02.wav</ShortName>
+					<CachePath>SFX/common_plr_player_dive_02_FC102FAB.wem</CachePath>
+				</File>
+				<File Id="289684235" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>title_ui_menu_nav_01.wav</ShortName>
+					<CachePath>SFX/title_ui_menu_nav_01_8F8B27E2.wem</CachePath>
+				</File>
+				<File Id="388277311" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>common_plr_player_dive_01.wav</ShortName>
+					<CachePath>SFX/common_plr_player_dive_01_45C864AE.wem</CachePath>
+				</File>
+				<File Id="425912349" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>common_plr_flyingfish_glide_03.wav</ShortName>
+					<CachePath>SFX/common_plr_flyingfish_glide_03_8F8B27E2.wem</CachePath>
+				</File>
+				<File Id="450924752" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>common_int_rock_impact_03.wav</ShortName>
+					<CachePath>SFX/common_int_rock_impact_03_8F8B27E2.wem</CachePath>
+				</File>
+				<File Id="461119039" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>common_plr_player_jump_01.wav</ShortName>
+					<CachePath>SFX/common_plr_player_jump_01_C6DA8BC0.wem</CachePath>
+				</File>
+				<File Id="502605611" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>common_int_door_close_01.wav</ShortName>
+					<CachePath>SFX/common_int_door_close_01_8F8B27E2.wem</CachePath>
+				</File>
+				<File Id="527424981" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>common_plr_player_jump_03.wav</ShortName>
+					<CachePath>SFX/common_plr_player_jump_03_A06F16EC.wem</CachePath>
+				</File>
+				<File Id="576064279" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>common_plr_flyingfish_glide_01.wav</ShortName>
+					<CachePath>SFX/common_plr_flyingfish_glide_01_8F8B27E2.wem</CachePath>
+				</File>
+				<File Id="673442626" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>common_env_water fall_flow_01.wav</ShortName>
+					<CachePath>SFX/common_env_water fall_flow_01_20C97FAC.wem</CachePath>
+				</File>
+				<File Id="685455157" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>title_ui_settingsmenu_unpause_01.wav</ShortName>
+					<CachePath>SFX/title_ui_settingsmenu_unpause_01_D682298F.wem</CachePath>
+				</File>
+				<File Id="861403366" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>common_plr_flyingfish_glide_02.wav</ShortName>
+					<CachePath>SFX/common_plr_flyingfish_glide_02_8F8B27E2.wem</CachePath>
+				</File>
+				<File Id="875813910" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>common_int_door_open_01.wav</ShortName>
+					<CachePath>SFX/common_int_door_open_01_8F8B27E2.wem</CachePath>
+				</File>
+				<File Id="895293770" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>title_ui_menu_select_01.wav</ShortName>
+					<CachePath>SFX/title_ui_menu_select_01_8F8B27E2.wem</CachePath>
+				</File>
+				<File Id="927395147" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>common_plr_player_dive_03.wav</ShortName>
+					<CachePath>SFX/common_plr_player_dive_03_7879E039.wem</CachePath>
+				</File>
+				<File Id="969708968" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>common_int_rock_roll_01.wav</ShortName>
+					<CachePath>SFX/common_int_rock_roll_01_62C62367.wem</CachePath>
+				</File>
+				<File Id="981545624" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>common_int_rock_impact_02.wav</ShortName>
+					<CachePath>SFX/common_int_rock_impact_02_8F8B27E2.wem</CachePath>
+				</File>
+				<File Id="1054955726" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>common_plr_player_jump_02.wav</ShortName>
+					<CachePath>SFX/common_plr_player_jump_02_5D0752ED.wem</CachePath>
+				</File>
+				<File Id="1058969932" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>title_ui_menu_back_01.wav</ShortName>
+					<CachePath>SFX/title_ui_menu_back_01_8F8B27E2.wem</CachePath>
+				</File>
+				<File Id="1065205166" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>common_int_rock_impact_01.wav</ShortName>
+					<CachePath>SFX/common_int_rock_impact_01_8F8B27E2.wem</CachePath>
+				</File>
+				<File Id="1068827354" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>common_plr_player_death_01.wav</ShortName>
+					<CachePath>SFX/common_plr_player_death_01_8F8B27E2.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="2750027184" Name="Play_common_env_water_fall_flow_01" MaxAttenuation="10" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="673442626"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2859081383" Name="Play_common_int_door_close_01" DurationType="OneShot" DurationMin="2" DurationMax="2">
+					<MediaRefs>
+						<MediaRef Id="502605611"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2242250017" Name="Play_common_int_door_open_01" DurationType="OneShot" DurationMin="2" DurationMax="2">
+					<MediaRefs>
+						<MediaRef Id="875813910"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="4282753298" Name="Play_common_int_rock_impact" DurationType="OneShot" DurationMin="1" DurationMax="1">
+					<MediaRefs>
+						<MediaRef Id="450924752"/>
+						<MediaRef Id="981545624"/>
+						<MediaRef Id="1065205166"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="653376297" Name="Play_common_int_rock_roll_01" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="969708968"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1386470624" Name="Play_common_plr_flyingfish_glide" DurationType="OneShot" DurationMin="2" DurationMax="2">
+					<MediaRefs>
+						<MediaRef Id="425912349"/>
+						<MediaRef Id="576064279"/>
+						<MediaRef Id="861403366"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1724980281" Name="Play_common_plr_player_death_01" DurationType="OneShot" DurationMin="2" DurationMax="2">
+					<MediaRefs>
+						<MediaRef Id="1068827354"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2605310083" Name="Play_common_plr_player_dive" DurationType="OneShot" DurationMin="0.9860335" DurationMax="1.0125698">
+					<MediaRefs>
+						<MediaRef Id="183307966"/>
+						<MediaRef Id="388277311"/>
+						<MediaRef Id="927395147"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1866911637" Name="Play_common_plr_player_jump" DurationType="OneShot" DurationMin="1.1494414" DurationMax="1.2164805">
+					<MediaRefs>
+						<MediaRef Id="461119039"/>
+						<MediaRef Id="527424981"/>
+						<MediaRef Id="1054955726"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3811694949" Name="Play_common_plr_player_swim_01" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="147384092"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1581394617" Name="Play_title_ui_menu_back_01" DurationType="OneShot" DurationMin="0.5" DurationMax="0.5">
+					<MediaRefs>
+						<MediaRef Id="1058969932"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3848493319" Name="Play_title_ui_menu_nav_01" DurationType="OneShot" DurationMin="0.5" DurationMax="0.5">
+					<MediaRefs>
+						<MediaRef Id="289684235"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1749636642" Name="Play_title_ui_menu_select_01" DurationType="OneShot" DurationMin="0.5" DurationMax="0.5">
+					<MediaRefs>
+						<MediaRef Id="895293770"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3080119269" Name="Play_title_ui_settingsmenu_pause_01" DurationType="OneShot" DurationMin="2" DurationMax="2">
+					<MediaRefs>
+						<MediaRef Id="105382696"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="175821544" Name="Play_title_ui_settingsmenu_unpause_01" DurationType="OneShot" DurationMin="1.631285" DurationMax="1.631285">
+					<MediaRefs>
+						<MediaRef Id="685455157"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{DE12B630-880A-1C05-859C-80859C5E73A8}</FileHash>
+</SoundBanksInfo>
