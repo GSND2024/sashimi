@@ -938,7 +938,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2496574298739164055, guid: 9cb420791556eb346b19332a8fad1f1c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 45.73
+      value: -7.5
       objectReference: {fileID: 0}
     - target: {fileID: 2496574298739164055, guid: 9cb420791556eb346b19332a8fad1f1c, type: 3}
       propertyPath: m_LocalPosition.y
@@ -988,10 +988,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: playerAnimated
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4882818609102031155, guid: 9cb420791556eb346b19332a8fad1f1c, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8174296407925712852, guid: 9cb420791556eb346b19332a8fad1f1c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1667891258}
   m_SourcePrefab: {fileID: 100100000, guid: 9cb420791556eb346b19332a8fad1f1c, type: 3}
 --- !u!1001 &400344935
 PrefabInstance:
@@ -2494,7 +2498,7 @@ Transform:
   m_GameObject: {fileID: 1046244655}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 53.33334, y: 0, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2516,6 +2520,7 @@ MonoBehaviour:
   player: {fileID: 1667891254}
   cameraHeight: 0
   cameraWidth: 0
+  roomCounter: 0
 --- !u!114 &1046244660
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4135,6 +4140,37 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8174296407925712852, guid: 9cb420791556eb346b19332a8fad1f1c, type: 3}
   m_PrefabInstance: {fileID: 360486544}
   m_PrefabAsset: {fileID: 0}
+--- !u!50 &1667891256 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 1282130582632941650, guid: 9cb420791556eb346b19332a8fad1f1c, type: 3}
+  m_PrefabInstance: {fileID: 360486544}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1667891258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1667891254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 542b277900f3d44cca41037991d4db79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
+  xInput: 0
+  yInput: 0
+  glideHorizontalSpeed: 6
+  glideSpeed: 2
+  normalGravityScale: 20
+  waterGravityScale: 0
+  jumpSpeed: 50
+  isGliding: 0
+  body: {fileID: 1667891256}
+  ab1: {fileID: 0}
+  player: {fileID: 1667891254}
+  nextLevel: {fileID: 0}
+  isG: 0
 --- !u!1001 &1694807657
 PrefabInstance:
   m_ObjectHideFlags: 0

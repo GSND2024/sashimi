@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-public class Chp2CameraMovement : MonoBehaviour
+public class Chp2CameraMovement1 : MonoBehaviour
 {
  public Camera cam;
  public GameObject player;
  public float cameraHeight;
  public float cameraWidth;
+ public int roomCounter = 0;
 
 void Start()
 {
@@ -59,6 +60,7 @@ IEnumerator moveTo(Transform fromPosition, float duration)
         fromPosition.position = Vector3.Lerp(startPos, toPosition, counter / duration);
         yield return null;
     }
+    roomCounter++;
     isMoving = false;
 }
 
@@ -77,6 +79,10 @@ IEnumerator moveBack(Transform fromPosition, float duration)
     Vector3 startPos = fromPosition.position;
     Vector3 toPosition = fromPosition.position;
     toPosition.x -= cameraWidth;
+    if (roomCounter == 2)
+    {
+        toPosition.y -= 3.5f;
+    }
    
 
 
@@ -86,6 +92,7 @@ IEnumerator moveBack(Transform fromPosition, float duration)
         fromPosition.position = Vector3.Lerp(startPos, toPosition, counter / duration);
         yield return null;
     }
+    roomCounter--;
     isMoving = false;
 }
 
