@@ -267,3 +267,7 @@ MonoBehaviour:
   jumpSpeed: 50
   isGliding: 0
   body: {fileID: 1282130582632941650}
+  ab1: {fileID: 0}
+  player: {fileID: 0}
+  nextLevel: {fileID: 0}
+  isG: 0
