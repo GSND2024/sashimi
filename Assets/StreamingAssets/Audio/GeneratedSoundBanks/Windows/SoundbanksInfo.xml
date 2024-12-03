@@ -22,7 +22,7 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="3342588750" Type="User" Language="SFX" Hash="{1DD3C44B-D080-E4D6-3CC9-4A7606A937C3}">
+		<SoundBank Id="3342588750" Type="User" Language="SFX" Hash="{91FDDCF7-010F-79D0-C7FB-39F3E56FF3E1}">
 			<ShortName>All_SFX</ShortName>
 			<Path>All_SFX.bnk</Path>
 			<Media>
@@ -32,11 +32,11 @@
 				</File>
 				<File Id="147384092" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>common_plr_player_swim_01.wav</ShortName>
-					<CachePath>SFX/common_plr_player_swim_01_98AA959E.wem</CachePath>
+					<CachePath>SFX/common_plr_player_swim_01_00360749.wem</CachePath>
 				</File>
 				<File Id="183307966" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>common_plr_player_dive_02.wav</ShortName>
-					<CachePath>SFX/common_plr_player_dive_02_FC102FAB.wem</CachePath>
+					<CachePath>SFX/common_plr_player_dive_02_1CD0F55C.wem</CachePath>
 				</File>
 				<File Id="289684235" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>title_ui_menu_nav_01.wav</ShortName>
@@ -44,7 +44,7 @@
 				</File>
 				<File Id="388277311" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>common_plr_player_dive_01.wav</ShortName>
-					<CachePath>SFX/common_plr_player_dive_01_45C864AE.wem</CachePath>
+					<CachePath>SFX/common_plr_player_dive_01_0A2F5C74.wem</CachePath>
 				</File>
 				<File Id="425912349" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>common_plr_flyingfish_glide_03.wav</ShortName>
@@ -56,7 +56,7 @@
 				</File>
 				<File Id="461119039" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>common_plr_player_jump_01.wav</ShortName>
-					<CachePath>SFX/common_plr_player_jump_01_C6DA8BC0.wem</CachePath>
+					<CachePath>SFX/common_plr_player_jump_01_85FE7E7E.wem</CachePath>
 				</File>
 				<File Id="502605611" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>common_int_door_close_01.wav</ShortName>
@@ -64,7 +64,7 @@
 				</File>
 				<File Id="527424981" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>common_plr_player_jump_03.wav</ShortName>
-					<CachePath>SFX/common_plr_player_jump_03_A06F16EC.wem</CachePath>
+					<CachePath>SFX/common_plr_player_jump_03_774FFFB8.wem</CachePath>
 				</File>
 				<File Id="576064279" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>common_plr_flyingfish_glide_01.wav</ShortName>
@@ -76,7 +76,7 @@
 				</File>
 				<File Id="685455157" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>title_ui_settingsmenu_unpause_01.wav</ShortName>
-					<CachePath>SFX/title_ui_settingsmenu_unpause_01_D682298F.wem</CachePath>
+					<CachePath>SFX/title_ui_settingsmenu_unpause_01_6B03949B.wem</CachePath>
 				</File>
 				<File Id="861403366" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>common_plr_flyingfish_glide_02.wav</ShortName>
@@ -92,11 +92,11 @@
 				</File>
 				<File Id="927395147" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>common_plr_player_dive_03.wav</ShortName>
-					<CachePath>SFX/common_plr_player_dive_03_7879E039.wem</CachePath>
+					<CachePath>SFX/common_plr_player_dive_03_92C4C1F9.wem</CachePath>
 				</File>
 				<File Id="969708968" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>common_int_rock_roll_01.wav</ShortName>
-					<CachePath>SFX/common_int_rock_roll_01_62C62367.wem</CachePath>
+					<CachePath>SFX/common_int_rock_roll_01_8F8E3114.wem</CachePath>
 				</File>
 				<File Id="981545624" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>common_int_rock_impact_02.wav</ShortName>
@@ -104,7 +104,7 @@
 				</File>
 				<File Id="1054955726" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>common_plr_player_jump_02.wav</ShortName>
-					<CachePath>SFX/common_plr_player_jump_02_5D0752ED.wem</CachePath>
+					<CachePath>SFX/common_plr_player_jump_02_E66CCD85.wem</CachePath>
 				</File>
 				<File Id="1058969932" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>title_ui_menu_back_01.wav</ShortName>
@@ -120,7 +120,7 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="2750027184" Name="Play_common_env_water_fall_flow_01" MaxAttenuation="100" DurationType="Infinite">
+				<Event Id="2750027184" Name="Play_common_env_water_fall_flow_01" MaxAttenuation="20" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="673442626"/>
 					</MediaRefs>
@@ -206,5 +206,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{616C65A6-26FC-C5D7-87F8-AAEA673501EB}</FileHash>
+	<FileHash>{4970196A-3514-9FBB-5BA8-5841D9AE6FC3}</FileHash>
 </SoundBanksInfo>
