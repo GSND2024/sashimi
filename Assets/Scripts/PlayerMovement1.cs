@@ -61,11 +61,11 @@ public class PlayerMovement1 : MonoBehaviour
             
             if (Input.GetKey(KeyCode.Space))
             {
-                StartGliding();
+                //StartGliding();
             }
             else
             {
-                StopGliding();
+                //StopGliding();
             }
             
         }
