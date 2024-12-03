@@ -49,7 +49,7 @@ public class PlayerMovement1 : MonoBehaviour
         {
             body.velocity = new Vector2(xInput * speed, body.velocity.y);
         }
-        if (isLookingRight && xInput < 0f || !isLookingRight && xInput > 0f || cutScene == false )
+        if (isLookingRight && xInput < 0f || !isLookingRight && xInput > 0f && cutScene == false )
         {
             Flip();
         }
@@ -145,7 +145,24 @@ public class PlayerMovement1 : MonoBehaviour
     {
         if (other.gameObject.CompareTag("ground") && inWater == false)
         {
-            ReloadScene();
+            int roomCounter = GameObject.Find("Main Camera").GetComponent<CameraMovement>().roomCounter;
+
+            if (roomCounter == 0)
+            {
+                player.transform.position = new Vector2(-7.38f, -1.87f);
+            }
+            else if (roomCounter == 1)
+            {
+                player.transform.position = new Vector2(9.89f, -0.69f);
+            }
+            else if (roomCounter == 2)
+            {
+                player.transform.position = new Vector2(28.89f, -0.20f);
+            }
+            else if (roomCounter == 3)
+            {
+                player.transform.position = new Vector2(46.68f, -0.01f);
+            }
         }
 
     }
