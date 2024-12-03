@@ -29,6 +29,8 @@ public class PlayerMovement1 : MonoBehaviour
 
     bool cutScene = false;
 
+    bool isG = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -55,7 +57,7 @@ public class PlayerMovement1 : MonoBehaviour
         }
         if (!inWater)
         {
-            /**
+            
             if (Input.GetKey(KeyCode.Space))
             {
                 StartGliding();
@@ -64,7 +66,7 @@ public class PlayerMovement1 : MonoBehaviour
             {
                 StopGliding();
             }
-            **/
+            
         }
         else
         {
@@ -89,6 +91,7 @@ public class PlayerMovement1 : MonoBehaviour
 
     private void StartGliding()
     {
+        isG = true;
         body.gravityScale = 0.5f; // Reduce gravity to simulate gliding
         //body.velocity = new Vector2(body.velocity.x, -glideSpeed); // Glide down slowly
         body.velocity = new Vector2(glideHorizontalSpeed * isGliding, -glideSpeed);
@@ -97,6 +100,7 @@ public class PlayerMovement1 : MonoBehaviour
 
     private void StopGliding()
     {
+        isG = false;
         body.gravityScale = normalGravityScale; // Restore normal gravity
     }
 
@@ -163,6 +167,11 @@ public class PlayerMovement1 : MonoBehaviour
             {
                 player.transform.position = new Vector2(46.68f, -0.01f);
             }
+        }
+
+        if (other.gameObject.CompareTag("rock"))
+        {
+            
         }
 
     }
