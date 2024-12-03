@@ -11,6 +11,7 @@ TagManager:
   - rock
   - ab1
   - nextLevel
+  - waterFlow
   layers:
   - Default
   - TransparentFX
