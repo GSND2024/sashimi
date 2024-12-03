@@ -30,7 +30,7 @@ public class PlayerMovement1 : MonoBehaviour
 
     bool cutScene = false;
 
-    bool isG = false;
+    public bool isG = false;
 
     // Start is called before the first frame update
     void Start()
@@ -118,6 +118,7 @@ public class PlayerMovement1 : MonoBehaviour
     
     private void OnTriggerEnter2D(Collider2D other)
     {
+        //cutscene
        if (other.gameObject.CompareTag("ab1"))
         {
             ab1.SetActive(false);
@@ -133,6 +134,10 @@ public class PlayerMovement1 : MonoBehaviour
         if (other.gameObject.CompareTag("nextLevel"))
         {
              SceneManager.LoadScene("Chapter2");
+        }
+
+        if (other.gameObject.CompareTag("water")) {
+            isG = false;
         }
     }
     
@@ -213,8 +218,24 @@ public class PlayerMovement1 : MonoBehaviour
     private void ReloadScene()
     {
         // Reload the current scene
-        Scene currentScene = SceneManager.GetActiveScene();
-        SceneManager.LoadScene(currentScene.name);
+        int roomCounter = GameObject.Find("Main Camera").GetComponent<CameraMovement>().roomCounter;
+
+            if (roomCounter == 0)
+            {
+                player.transform.position = new Vector2(-7.38f, -1.87f);
+            }
+            else if (roomCounter == 1)
+            {
+                player.transform.position = new Vector2(9.89f, -0.69f);
+            }
+            else if (roomCounter == 2)
+            {
+                player.transform.position = new Vector2(28.89f, -0.20f);
+            }
+            else if (roomCounter == 3)
+            {
+                player.transform.position = new Vector2(46.68f, -0.01f);
+            }
     }
 
 }
