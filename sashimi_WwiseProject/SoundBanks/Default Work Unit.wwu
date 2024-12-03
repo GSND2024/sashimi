@@ -1,6 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{2339A279-CD7F-4D0D-AC77-478F09441ACD}" SchemaVersion="119">
 	<SoundBanks>
-		<WorkUnit Name="Default Work Unit" ID="{2339A279-CD7F-4D0D-AC77-478F09441ACD}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{2339A279-CD7F-4D0D-AC77-478F09441ACD}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="All_SFX" ID="{B66040ED-F1C5-42A0-B087-7B9794EBEDD0}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_common_plr_flyingfish_glide" ID="{F22894DE-0800-4016-8681-CAD5DDC85DC1}" WorkUnitID="{331BD20D-8565-47C0-9DBB-9A39EF2DE1C8}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_common_plr_player_dive" ID="{7CFC9492-B12B-4349-84C3-3FDE576B0F56}" WorkUnitID="{331BD20D-8565-47C0-9DBB-9A39EF2DE1C8}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_common_plr_player_jump" ID="{5C549735-BF5E-43E5-AA27-F4D3F500983D}" WorkUnitID="{331BD20D-8565-47C0-9DBB-9A39EF2DE1C8}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_title_ui_menu_nav_01" ID="{D80B2594-4429-4401-86AA-072E354C59CF}" WorkUnitID="{331BD20D-8565-47C0-9DBB-9A39EF2DE1C8}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_title_ui_settingsmenu_pause_01" ID="{EFA53DE9-5BBD-4670-9B23-CD6F9BC0A00B}" WorkUnitID="{331BD20D-8565-47C0-9DBB-9A39EF2DE1C8}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_common_int_door_open_01" ID="{664B3566-77AC-4680-B417-FF859F75A902}" WorkUnitID="{331BD20D-8565-47C0-9DBB-9A39EF2DE1C8}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_title_ui_menu_select_01" ID="{6506AA7D-B5A1-4813-8F89-6B529890089E}" WorkUnitID="{331BD20D-8565-47C0-9DBB-9A39EF2DE1C8}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_common_int_door_close_01" ID="{1F7A41A2-0DB6-4B29-9D5C-17FF07A75775}" WorkUnitID="{331BD20D-8565-47C0-9DBB-9A39EF2DE1C8}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_title_ui_menu_back_01" ID="{1D1B6496-893F-4B9E-B553-3C9080FCDE32}" WorkUnitID="{331BD20D-8565-47C0-9DBB-9A39EF2DE1C8}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_common_plr_player_death_01" ID="{5ED4D685-2432-4C7F-BD94-2D7263703154}" WorkUnitID="{331BD20D-8565-47C0-9DBB-9A39EF2DE1C8}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_common_plr_player_swim_01" ID="{F0A4FD6F-880A-4CC8-AEBB-7042027E720E}" WorkUnitID="{331BD20D-8565-47C0-9DBB-9A39EF2DE1C8}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_common_int_rock_impact" ID="{DA5BDD36-5008-4CED-8258-D2812539C893}" WorkUnitID="{331BD20D-8565-47C0-9DBB-9A39EF2DE1C8}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_common_int_rock_roll_01" ID="{91BFFE02-085C-4E97-B6AE-F96C8D7918B5}" WorkUnitID="{331BD20D-8565-47C0-9DBB-9A39EF2DE1C8}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_title_ui_settingsmenu_unpause_01" ID="{EB5DF7BD-0086-4EAB-B295-692860BDAA69}" WorkUnitID="{331BD20D-8565-47C0-9DBB-9A39EF2DE1C8}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_common_env_water_fall_flow_01" ID="{BB702A58-B5E8-4F82-8086-F6A2CEA34248}" WorkUnitID="{331BD20D-8565-47C0-9DBB-9A39EF2DE1C8}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundBanks>
 </WwiseDocument>
