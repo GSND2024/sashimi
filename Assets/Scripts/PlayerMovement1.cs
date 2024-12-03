@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement; // Add this to manage scenes
 
@@ -78,6 +79,11 @@ public class PlayerMovement1 : MonoBehaviour
             }
 
         }
+        if(transform.childCount == 3 && isG == false)
+        {
+            transform.GetChild(2).AddComponent<Rigidbody2D>();
+            transform.GetChild(2).SetParent(null);      
+        }
 
 
     }
@@ -127,7 +133,6 @@ public class PlayerMovement1 : MonoBehaviour
         if (other.gameObject.CompareTag("nextLevel"))
         {
              SceneManager.LoadScene("Chapter2");
-
         }
     }
     
@@ -169,9 +174,10 @@ public class PlayerMovement1 : MonoBehaviour
             }
         }
 
-        if (other.gameObject.CompareTag("rock"))
+        if (other.gameObject.CompareTag("rock") && isG)
         {
-            
+            Destroy(other.gameObject.GetComponent<Rigidbody2D>());
+            other.transform.SetParent(transform);
         }
 
     }
