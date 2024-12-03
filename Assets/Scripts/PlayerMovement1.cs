@@ -21,6 +21,14 @@ public class PlayerMovement1 : MonoBehaviour
     private bool isLookingRight = false;
     private bool inWater = true;
 
+    public GameObject ab1;
+
+    public GameObject player;
+
+    public GameObject nextLevel;
+
+    bool cutScene = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -41,7 +49,7 @@ public class PlayerMovement1 : MonoBehaviour
         {
             body.velocity = new Vector2(xInput * speed, body.velocity.y);
         }
-        if (isLookingRight && xInput < 0f || !isLookingRight && xInput > 0f)
+        if (isLookingRight && xInput < 0f || !isLookingRight && xInput > 0f || cutScene == false )
         {
             Flip();
         }
@@ -97,18 +105,28 @@ public class PlayerMovement1 : MonoBehaviour
         body.gravityScale = waterGravityScale;
     }
 
-    /**
+    
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("water"))
+       if (other.gameObject.CompareTag("ab1"))
         {
-            //Debug.Log("Player entered the background area");
-            body.gravityScale = waterGravityScale;
-            inWater = true;
+            ab1.SetActive(false);
+
+            nextLevel.SetActive(true);
+
+            cutScene = true;
+
+            StartCoroutine(moveTo(player.transform, 3.0f));
+
         }
 
+        if (other.gameObject.CompareTag("nextLevel"))
+        {
+             SceneManager.LoadScene("Chapter2");
+
+        }
     }
-    **/
+    
 
     private void OnTriggerExit2D(Collider2D other)
     {
@@ -131,6 +149,34 @@ public class PlayerMovement1 : MonoBehaviour
         }
 
     }
+
+    bool isMoving = false;
+    IEnumerator moveTo(Transform fromPosition, float duration)
+{
+    //Make sure there is only one instance of this function running
+    if (isMoving)
+    {
+        yield break; ///exit if this is still running
+    }
+    isMoving = true;
+
+    float counter = 0;
+
+    //Get the current position of the object to be moved
+    Vector3 startPos = fromPosition.position;
+    Vector3 toPosition = fromPosition.position;
+    toPosition.x += 10;
+   
+
+
+    while (counter < duration)
+    {
+        counter += Time.deltaTime;
+        fromPosition.position = Vector3.Lerp(startPos, toPosition, counter / duration);
+        yield return null;
+    }
+    isMoving = false;
+}
 
     private void ReloadScene()
     {

@@ -9,6 +9,8 @@ TagManager:
   - door
   - ground
   - rock
+  - ab1
+  - nextLevel
   layers:
   - Default
   - TransparentFX
