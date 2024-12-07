@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 448688293385382363}
   - component: {fileID: -7274102861648270881}
   - component: {fileID: -8873452004293979770}
+  - component: {fileID: -3084981882009688012}
   m_Layer: 0
   m_Name: water down
   m_TagString: water
@@ -76,7 +77,7 @@ SpriteRenderer:
   m_SortingLayerID: -215955843
   m_SortingLayer: -2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 609ac289d7e5943afa8750e95b915589, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 91a347d72510e4a4880f37f1db848dff, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -123,7 +124,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.84, y: 1.77}
+    oldSize: {x: 6.24, y: 4.68}
     newSize: {x: 2.84, y: 1.77}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -188,3 +189,24 @@ MonoBehaviour:
   attenuationSphereColor: {r: 1, g: 0, b: 0, a: 0.1}
   LargeModePositions: []
   multiPositionArray: []
+--- !u!95 &-3084981882009688012
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7071615142538897486}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 334343c7196da0a4b8fc3d711a9c1c23, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
