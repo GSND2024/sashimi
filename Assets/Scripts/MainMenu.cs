@@ -15,6 +15,8 @@ public class MainMenu : MonoBehaviour
 
     public void PlayGame()
     {
+        PlayerPrefs.SetInt("roomCounter1", 0);
+        PlayerPrefs.SetInt("roomCounter2", 0);
         SceneManager.LoadScene("Chapter1");
     }
 

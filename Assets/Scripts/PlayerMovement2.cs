@@ -32,9 +32,34 @@ public class PlayerMovement2 : MonoBehaviour
 
     public bool isG = false;
 
+     public Camera cam;
+
     // Start is called before the first frame update
     void Start()
     {
+        int roomCounter = PlayerPrefs.GetInt("roomCounter2");
+        Debug.Log(roomCounter);
+        
+        if (roomCounter == 0)
+            {
+                cam.transform.position = new Vector3(0f,0f,-10f);
+                player.transform.position = new Vector2(-7.38f, -1.87f);
+            }
+            else if (roomCounter == 1)
+            {
+                cam.transform.position = new Vector3(17.78f,0f,-10f);
+                player.transform.position = new Vector2(9.89f, -0.69f);
+            }
+            else if (roomCounter == 2)
+            {
+                cam.transform.position = new Vector3(35.55f,0f,-10f);
+                player.transform.position = new Vector2(28.89f, -0.20f);
+            }
+            else if (roomCounter == 3)
+            {
+                cam.transform.position = new Vector3(53.33f,0f,-10f);
+                player.transform.position = new Vector2(46.68f, -0.01f);
+            }
         
     }
 
@@ -80,10 +105,13 @@ public class PlayerMovement2 : MonoBehaviour
             }
 
         }
-        if(transform.childCount == 3 && isG == false)
+        if(transform.childCount >= 3 && isG == false)
         {
-            transform.GetChild(2).AddComponent<Rigidbody2D>();
-            transform.GetChild(2).SetParent(null);      
+            for(int i = 2; i < transform.childCount; i++)
+            {
+                transform.GetChild(i).AddComponent<Rigidbody2D>();
+                transform.GetChild(i).SetParent(null);  
+            }    
         }
 
 
@@ -164,24 +192,7 @@ public class PlayerMovement2 : MonoBehaviour
     {
         if (other.gameObject.CompareTag("ground") && inWater == false)
         {
-            int roomCounter = GameObject.Find("Main Camera").GetComponent<Chp2CameraMovement1>().roomCounter;
-
-            if (roomCounter == 0)
-            {
-                player.transform.position = new Vector2(-7.38f, -1.87f);
-            }
-            else if (roomCounter == 1)
-            {
-                player.transform.position = new Vector2(9.89f, -0.69f);
-            }
-            else if (roomCounter == 2)
-            {
-                player.transform.position = new Vector2(28.89f, -0.20f);
-            }
-            else if (roomCounter == 3)
-            {
-                player.transform.position = new Vector2(46.68f, -0.01f);
-            }
+            ReloadScene();
         }
 
         if (other.gameObject.CompareTag("rock") && isG)
@@ -222,25 +233,7 @@ public class PlayerMovement2 : MonoBehaviour
 
     private void ReloadScene()
     {
-        // Reload the current scene
-        int roomCounter = GameObject.Find("Main Camera").GetComponent<Chp2CameraMovement1>().roomCounter;
-
-            if (roomCounter == 0)
-            {
-                player.transform.position = new Vector2(-7.38f, -1.87f);
-            }
-            else if (roomCounter == 1)
-            {
-                player.transform.position = new Vector2(9.89f, -0.69f);
-            }
-            else if (roomCounter == 2)
-            {
-                player.transform.position = new Vector2(28.89f, -0.20f);
-            }
-            else if (roomCounter == 3)
-            {
-                player.transform.position = new Vector2(46.68f, -0.01f);
-            }
+       SceneManager.LoadScene("Chapter2");
     }
 
 }

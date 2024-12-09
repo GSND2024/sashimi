@@ -9,14 +9,14 @@ public class CameraMovement : MonoBehaviour
  public GameObject player;
  public float cameraHeight;
  public float cameraWidth;
- public int roomCounter = 0;
+ public int roomCounter;
 
 void Start()
 {
-    
+    roomCounter = PlayerPrefs.GetInt("roomCounter1");
     cameraHeight = 2f * cam.orthographicSize; // Height in world units
     cameraWidth = cameraHeight * cam.aspect;  // Width in world units (height × aspect ratio)
-    Debug.Log(cameraWidth);
+    //Debug.Log(cameraWidth);
     //StartCoroutine(moveToX(cam.transform, 1.0f));
 }
 
@@ -65,6 +65,7 @@ IEnumerator moveTo(Transform fromPosition, float duration)
         yield return null;
     }
     roomCounter++;
+    PlayerPrefs.SetInt("roomCounter1", roomCounter);
     isMoving = false;
 }
 

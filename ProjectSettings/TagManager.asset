@@ -12,6 +12,7 @@ TagManager:
   - ab1
   - nextLevel
   - waterFlow
+  - kill
   layers:
   - Default
   - TransparentFX
