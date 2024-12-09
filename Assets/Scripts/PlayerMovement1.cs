@@ -127,6 +127,8 @@ public class PlayerMovement1 : MonoBehaviour
 
             cutScene = true;
 
+            player.transform.position = new Vector2(68.35f, 0.49f);
+
             StartCoroutine(moveTo(player.transform, 3.0f));
 
         }

@@ -41,13 +41,14 @@ public class PlayerMovement2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Debug.Log(inWater);
         if (Input.GetKeyDown(KeyCode.R))
         {
             ReloadScene();
         }
         xInput = Input.GetAxis("Horizontal");
         if (xInput > 0) { isGliding = 1; }
-        if (xInput <0) { isGliding = -1; }
+        if (xInput < 0) { isGliding = -1; }
         if (Mathf.Abs(xInput) > 0)
         {
             body.velocity = new Vector2(xInput * speed, body.velocity.y);
@@ -110,9 +111,13 @@ public class PlayerMovement2 : MonoBehaviour
         body.gravityScale = normalGravityScale; // Restore normal gravity
     }
 
+
     private void OnTriggerStay2D(Collider2D other) {
+        if(other.gameObject.CompareTag("water"))
+        {
         inWater = true;
         body.gravityScale = waterGravityScale;
+        }
     }
 
     
