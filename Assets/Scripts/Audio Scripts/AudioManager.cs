@@ -1,4 +1,5 @@
 using UnityEngine;
+using AK;
 
 /*
 1. Attach this script to the WwiseGlobal GameObject.
@@ -36,6 +37,17 @@ public class AudioManager : MonoBehaviour
         }
         Instance = this;
         DontDestroyOnLoad(gameObject); // Persist between scenes.
+
+        // Set the "Music_State" state to "TitleScreen"
+        AkSoundEngine.SetState("Music_State", "TitleScreen");
+
+        // Trigger the Play_AllScenes_Music event
+        var eventResult = AkSoundEngine.PostEvent("Play_AllScenes_Music", this.gameObject);
+    }
+
+    public void RestartMusic() {
+        // Trigger the Play_AllScenes_Music event
+        var eventResult = AkSoundEngine.PostEvent("Play_AllScenes_Music", this.gameObject);
     }
 
 

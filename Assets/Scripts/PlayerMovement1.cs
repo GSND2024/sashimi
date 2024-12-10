@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement; // Add this to manage scenes
+using AK;
 
 
 public class PlayerMovement1 : MonoBehaviour
@@ -39,6 +40,9 @@ public class PlayerMovement1 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+          // setting music state for Chapter 1 music
+          AkSoundEngine.SetState("Music_State", "Chapter1_Explore");
+
           PlayerPrefs.SetInt("levelCounter", 0);
           int roomCounter = PlayerPrefs.GetInt("roomCounter1");
 
@@ -170,6 +174,9 @@ public class PlayerMovement1 : MonoBehaviour
         if (other.gameObject.CompareTag("nextLevel"))
         {
              SceneManager.LoadScene("Chapter2");
+
+             // setting music state for Chapter 2 music
+             AkSoundEngine.SetState("Music_State", "Chapter2_Explore");
         }
 
         if (other.gameObject.CompareTag("water")) {

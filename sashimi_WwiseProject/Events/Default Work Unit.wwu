@@ -179,9 +179,9 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_TitleScreen_Music" ID="{4B41BB8F-17CA-4090-A383-7E70CAE87191}">
+				<Event Name="Play_TitleScreen_Music" ID="{7A715C68-5023-4C08-8D88-296466FDAEE2}">
 					<ChildrenList>
-						<Action Name="" ID="{955CE78E-4E4B-41D8-82D5-D2BCD07E641E}" ShortID="687285472">
+						<Action Name="" ID="{5BF88A54-D19F-4015-868E-BC11AA4997C0}" ShortID="797332870">
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="TitleScreen_Music" ID="{A31865A8-934B-40A1-B592-B2AEBB399250}" WorkUnitID="{FFC92B62-78C8-4206-AD96-55A43EB03F83}"/>
@@ -190,12 +190,34 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_Chapter1_Explore_Music" ID="{F17297CC-91CD-4CF0-AF77-25DD05019BB7}">
+				<Event Name="Play_Chapter2_Explore_Music" ID="{E9BF3CB8-0DF1-4CC8-B1A3-22AB071927E0}">
 					<ChildrenList>
-						<Action Name="" ID="{81D54506-E154-4CE4-B16D-41B03748DD8C}" ShortID="808054938">
+						<Action Name="" ID="{AB1CBB58-679D-4D49-B52D-C8A657F28C2A}" ShortID="90454420">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Chapter2_Explore_Music" ID="{1EC6F0DD-5D57-4C56-9CE9-0856CF8D5076}" WorkUnitID="{FFC92B62-78C8-4206-AD96-55A43EB03F83}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Chapter1_Explore_Music" ID="{CA78441A-D78B-4548-B7D5-0DB8377A6180}">
+					<ChildrenList>
+						<Action Name="" ID="{2E694DFD-858B-4060-899F-875BFF785419}" ShortID="111798942">
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Chapter1_Explore_Music" ID="{E5C948D8-9989-49F7-AFDC-6AA853821623}" WorkUnitID="{FFC92B62-78C8-4206-AD96-55A43EB03F83}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_AllScenes_Music" ID="{09BCA5A0-BB94-437D-9549-55DB14F25D50}">
+					<ChildrenList>
+						<Action Name="" ID="{211C7104-32C7-407D-A147-2B8525AC81CB}" ShortID="822975613">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="AllScenes_Music" ID="{983F1957-12EA-4F33-8D21-B498C315A687}" WorkUnitID="{FFC92B62-78C8-4206-AD96-55A43EB03F83}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

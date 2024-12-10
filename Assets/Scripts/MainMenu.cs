@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using AK;
 
 public class MainMenu : MonoBehaviour
 {
@@ -40,6 +41,18 @@ public class MainMenu : MonoBehaviour
     public void BackButton()
     {
         SceneManager.LoadScene("MainMenu");
+
+        // Stops all gameplay sounds
+        AkSoundEngine.StopAll();
+
+        // Set the music back to "TitleScreen"
+        AkSoundEngine.SetState("Music_State", "TitleScreen");
+
+        // Call the method on AudioManager static instance
+        if (AudioManager.Instance != null)
+        {
+            AudioManager.Instance.RestartMusic();
+        }
     }
 
     public void Restart()

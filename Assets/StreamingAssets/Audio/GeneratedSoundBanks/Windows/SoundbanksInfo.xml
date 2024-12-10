@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{B6CBD692-12EC-CDBA-0932-48F63C40C91F}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{2F3D99B6-F1B4-72DB-083B-8692BB202852}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -21,15 +21,18 @@
 			<Busses>
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
-			<SwitchGroups>
-				<SwitchGroup Id="1127992412" Name="Title_Gameplay">
-					<Switches>
-						<Switch Id="3705726509" Name="Title"/>
-					</Switches>
-				</SwitchGroup>
-			</SwitchGroups>
+			<StateGroups>
+				<StateGroup Id="3826569560" Name="Music_State">
+					<States>
+						<State Id="152105657" Name="TitleScreen"/>
+						<State Id="748895195" Name="None"/>
+						<State Id="1520307098" Name="Chapter2_Explore"/>
+						<State Id="3775448961" Name="Chapter1_Explore"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="3342588750" Type="User" Language="SFX" Hash="{4152F6AD-8DBC-ECE7-6E2A-41D678D717C2}">
+		<SoundBank Id="3342588750" Type="User" Language="SFX" Hash="{1A6C8285-5A57-F0B8-2DEA-492DB08F8927}">
 			<ShortName>All_SFX</ShortName>
 			<Path>All_SFX.bnk</Path>
 			<Media>
@@ -49,13 +52,17 @@
 					<ShortName>title_ui_menu_nav_01.wav</ShortName>
 					<CachePath>SFX/title_ui_menu_nav_01_8F8B27E2.wem</CachePath>
 				</File>
+				<File Id="291814580" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Shasimi_C2Theme.wav</ShortName>
+					<CachePath>SFX/Shasimi_C2Theme_C4CC260C.wem</CachePath>
+				</File>
 				<File Id="291996661" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Shasimi_C1Theme.wav</ShortName>
 					<CachePath>SFX/Shasimi_C1Theme_C4CC260C.wem</CachePath>
 				</File>
 				<File Id="332186240" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>common_env_chapter1_amb_01.wav</ShortName>
-					<CachePath>SFX/common_env_chapter1_amb_01_6E01B8A4.wem</CachePath>
+					<CachePath>SFX/common_env_chapter1_amb_01_B0142416.wem</CachePath>
 				</File>
 				<File Id="388277311" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>common_plr_player_dive_01.wav</ShortName>
@@ -139,9 +146,36 @@
 				</File>
 			</Media>
 			<Events>
+				<Event Id="1398224244" Name="Play_AllScenes_Music" DurationType="Infinite">
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="3826569560" Id="3775448961"/>
+							<MediaRefs>
+								<MediaRef Id="291996661"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="3826569560" Id="1520307098"/>
+							<MediaRefs>
+								<MediaRef Id="291814580"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="3826569560" Id="152105657"/>
+							<MediaRefs>
+								<MediaRef Id="634904621"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
 				<Event Id="462220086" Name="Play_Chapter1_Explore_Music" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="291996661"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1038838721" Name="Play_Chapter2_Explore_Music" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="291814580"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="1370963137" Name="Play_common_env_chapter1_amb_01" DurationType="Infinite">
@@ -238,7 +272,17 @@
 					</MediaRefs>
 				</Event>
 			</Events>
+			<StateGroups>
+				<StateGroup Id="3826569560" Name="Music_State">
+					<States>
+						<State Id="152105657" Name="TitleScreen"/>
+						<State Id="748895195" Name="None"/>
+						<State Id="1520307098" Name="Chapter2_Explore"/>
+						<State Id="3775448961" Name="Chapter1_Explore"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{9EE71460-C776-C335-DA7D-47C5973C54C5}</FileHash>
+	<FileHash>{819F3D46-498F-1A70-D5BD-5DD657076B6F}</FileHash>
 </SoundBanksInfo>

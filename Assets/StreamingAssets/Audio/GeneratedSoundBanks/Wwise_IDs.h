@@ -13,7 +13,9 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID PLAY_ALLSCENES_MUSIC = 1398224244U;
         static const AkUniqueID PLAY_CHAPTER1_EXPLORE_MUSIC = 462220086U;
+        static const AkUniqueID PLAY_CHAPTER2_EXPLORE_MUSIC = 1038838721U;
         static const AkUniqueID PLAY_COMMON_ENV_CHAPTER1_AMB_01 = 1370963137U;
         static const AkUniqueID PLAY_COMMON_ENV_WATER_FALL_FLOW_01 = 2750027184U;
         static const AkUniqueID PLAY_COMMON_INT_DOOR_CLOSE_01 = 2859081383U;
@@ -33,19 +35,22 @@ namespace AK
         static const AkUniqueID PLAY_TITLESCREEN_MUSIC = 2440491800U;
     } // namespace EVENTS
 
-    namespace SWITCHES
+    namespace STATES
     {
-        namespace TITLE_GAMEPLAY
+        namespace MUSIC_STATE
         {
-            static const AkUniqueID GROUP = 1127992412U;
+            static const AkUniqueID GROUP = 3826569560U;
 
-            namespace SWITCH
+            namespace STATE
             {
-                static const AkUniqueID TITLE = 3705726509U;
-            } // namespace SWITCH
-        } // namespace TITLE_GAMEPLAY
+                static const AkUniqueID CHAPTER1_EXPLORE = 3775448961U;
+                static const AkUniqueID CHAPTER2_EXPLORE = 1520307098U;
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID TITLESCREEN = 152105657U;
+            } // namespace STATE
+        } // namespace MUSIC_STATE
 
-    } // namespace SWITCHES
+    } // namespace STATES
 
     namespace BANKS
     {

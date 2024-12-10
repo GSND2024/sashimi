@@ -2,8 +2,10 @@ Event	ID	Name			Wwise Object Path	Notes
 	175821544	Play_title_ui_settingsmenu_unpause_01			\Default Work Unit\Play_title_ui_settingsmenu_unpause_01	
 	462220086	Play_Chapter1_Explore_Music			\Default Work Unit\Play_Chapter1_Explore_Music	
 	653376297	Play_common_int_rock_roll_01			\Default Work Unit\Play_common_int_rock_roll_01	
+	1038838721	Play_Chapter2_Explore_Music			\Default Work Unit\Play_Chapter2_Explore_Music	
 	1370963137	Play_common_env_chapter1_amb_01			\Default Work Unit\Play_common_env_chapter1_amb_01	
 	1386470624	Play_common_plr_flyingfish_glide			\Default Work Unit\Play_common_plr_flyingfish_glide	
+	1398224244	Play_AllScenes_Music			\Default Work Unit\Play_AllScenes_Music	
 	1581394617	Play_title_ui_menu_back_01			\Default Work Unit\Play_title_ui_menu_back_01	
 	1724980281	Play_common_plr_player_death_01			\Default Work Unit\Play_common_plr_player_death_01	
 	1749636642	Play_title_ui_menu_select_01			\Default Work Unit\Play_title_ui_menu_select_01	
@@ -18,18 +20,22 @@ Event	ID	Name			Wwise Object Path	Notes
 	3848493319	Play_title_ui_menu_nav_01			\Default Work Unit\Play_title_ui_menu_nav_01	
 	4282753298	Play_common_int_rock_impact			\Default Work Unit\Play_common_int_rock_impact	
 
-Switch Group	ID	Name			Wwise Object Path	Notes
-	1127992412	Title_Gameplay			\Default Work Unit\Title_Gameplay	
+State Group	ID	Name			Wwise Object Path	Notes
+	3826569560	Music_State			\Default Work Unit\Music_State	
 
-Switch	ID	Name	Switch Group			Notes
-	3705726509	Title	Title_Gameplay			
+State	ID	Name	State Group			Notes
+	152105657	TitleScreen	Music_State			
+	748895195	None	Music_State			
+	1520307098	Chapter2_Explore	Music_State			
+	3775448961	Chapter1_Explore	Music_State			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	105382696	title_ui_settingsmenu_pause_01	Y:\Git Repos\sashimi\sashimi_WwiseProject\.cache\Windows\SFX\title_ui_settingsmenu_pause_01_8F8B27E2.wem		\Actor-Mixer Hierarchy\Default Work Unit\TitleScreen\UI\title_ui_settingsmenu_pause_01		384096
 	147384092	common_plr_player_swim_01	Y:\Git Repos\sashimi\sashimi_WwiseProject\.cache\Windows\SFX\common_plr_player_swim_01_00360749.wem		\Actor-Mixer Hierarchy\Default Work Unit\Common\Player\common_plr_player_swim_01		2611136
 	183307966	common_plr_player_dive_02	Y:\Git Repos\sashimi\sashimi_WwiseProject\.cache\Windows\SFX\common_plr_player_dive_02_1CD0F55C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Common\Player\common_plr_player_dive\common_plr_player_dive_02		194508
 	289684235	title_ui_menu_nav_01	Y:\Git Repos\sashimi\sashimi_WwiseProject\.cache\Windows\SFX\title_ui_menu_nav_01_8F8B27E2.wem		\Actor-Mixer Hierarchy\Default Work Unit\TitleScreen\UI\title_ui_menu_nav_01		96096
-	291996661	Shasimi_C1Theme	Y:\Git Repos\sashimi\sashimi_WwiseProject\.cache\Windows\SFX\Shasimi_C1Theme_C4CC260C.wem		\Interactive Music Hierarchy\Default Work Unit\AllMusic\Scenes\Chapter1_Explore_Music\Shasimi_C1Theme\Shasimi_C1Theme		20480160
+	291814580	Shasimi_C2Theme	Y:\Git Repos\sashimi\sashimi_WwiseProject\.cache\Windows\SFX\Shasimi_C2Theme_C4CC260C.wem		\Interactive Music Hierarchy\Default Work Unit\AllMusic\AllScenes_Music\Chapter2_Explore_Music\Shasimi_C2Theme\Shasimi_C2Theme		18432160
+	291996661	Shasimi_C1Theme	Y:\Git Repos\sashimi\sashimi_WwiseProject\.cache\Windows\SFX\Shasimi_C1Theme_C4CC260C.wem		\Interactive Music Hierarchy\Default Work Unit\AllMusic\AllScenes_Music\Chapter1_Explore_Music\Shasimi_C1Theme\Shasimi_C1Theme		20480160
 	332186240	common_env_chapter1_amb_01	Y:\Git Repos\sashimi\sashimi_WwiseProject\.cache\Windows\SFX\common_env_chapter1_amb_01_B0142416.wem		\Actor-Mixer Hierarchy\Default Work Unit\Common\Environmental\common_env_chapter1_amb_01		6912096
 	388277311	common_plr_player_dive_01	Y:\Git Repos\sashimi\sashimi_WwiseProject\.cache\Windows\SFX\common_plr_player_dive_01_0A2F5C74.wem		\Actor-Mixer Hierarchy\Default Work Unit\Common\Player\common_plr_player_dive\common_plr_player_dive_01		189416
 	425912349	common_plr_flyingfish_glide_03	Y:\Git Repos\sashimi\sashimi_WwiseProject\.cache\Windows\SFX\common_plr_flyingfish_glide_03_8F8B27E2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Common\Player\common_plr_flyingfish_glide\common_plr_flyingfish_glide_03		384096
@@ -38,7 +44,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	502605611	common_int_door_close_01	Y:\Git Repos\sashimi\sashimi_WwiseProject\.cache\Windows\SFX\common_int_door_close_01_8F8B27E2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Common\Interactable\common_int_door_close_01		384096
 	527424981	common_plr_player_jump_03	Y:\Git Repos\sashimi\sashimi_WwiseProject\.cache\Windows\SFX\common_plr_player_jump_03_774FFFB8.wem		\Actor-Mixer Hierarchy\Default Work Unit\Common\Player\common_plr_player_jump\common_plr_player_jump_03		233660
 	576064279	common_plr_flyingfish_glide_01	Y:\Git Repos\sashimi\sashimi_WwiseProject\.cache\Windows\SFX\common_plr_flyingfish_glide_01_8F8B27E2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Common\Player\common_plr_flyingfish_glide\common_plr_flyingfish_glide_01		384096
-	634904621	Shasimi_MainTheme_Screen_UI	Y:\Git Repos\sashimi\sashimi_WwiseProject\.cache\Windows\SFX\Shasimi_MainTheme_Screen_UI_C4CC260C.wem		\Interactive Music Hierarchy\Default Work Unit\AllMusic\Scenes\TitleScreen_Music\Shasimi_MainTheme_Screen_UI\Shasimi_MainTheme_Screen_UI		17115588
+	634904621	Shasimi_MainTheme_Screen_UI	Y:\Git Repos\sashimi\sashimi_WwiseProject\.cache\Windows\SFX\Shasimi_MainTheme_Screen_UI_C4CC260C.wem		\Interactive Music Hierarchy\Default Work Unit\AllMusic\AllScenes_Music\TitleScreen_Music\Shasimi_MainTheme_Screen_UI\Shasimi_MainTheme_Screen_UI		17115588
 	673442626	common_env_water fall_flow_01	Y:\Git Repos\sashimi\sashimi_WwiseProject\.cache\Windows\SFX\common_env_water fall_flow_01_20C97FAC.wem		\Actor-Mixer Hierarchy\Default Work Unit\Common\Environmental\common_env_water fall_flow_01		1536096
 	685455157	title_ui_settingsmenu_unpause_01	Y:\Git Repos\sashimi\sashimi_WwiseProject\.cache\Windows\SFX\title_ui_settingsmenu_unpause_01_6B03949B.wem		\Actor-Mixer Hierarchy\Default Work Unit\TitleScreen\UI\title_ui_settingsmenu_unpause_01		313304
 	861403366	common_plr_flyingfish_glide_02	Y:\Git Repos\sashimi\sashimi_WwiseProject\.cache\Windows\SFX\common_plr_flyingfish_glide_02_8F8B27E2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Common\Player\common_plr_flyingfish_glide\common_plr_flyingfish_glide_02		384096
