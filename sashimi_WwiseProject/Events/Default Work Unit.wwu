@@ -168,6 +168,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_common_env_chapter1_amb_01" ID="{CCFB6D0E-9FC0-4097-9B09-A413051ABEBE}">
+					<ChildrenList>
+						<Action Name="" ID="{88A74D89-022B-4B3C-A700-C4F6BE451DB3}" ShortID="420801453">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="common_env_chapter1_amb_01" ID="{586A99FA-5BF9-47A3-B767-3AED0E77F517}" WorkUnitID="{FA30874D-B696-4215-98C2-EA6AD79E8C44}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

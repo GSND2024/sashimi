@@ -6,6 +6,7 @@
 				<SoundBank Name="All_SFX" ID="{B66040ED-F1C5-42A0-B087-7B9794EBEDD0}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Play_common_plr_flyingfish_glide" ID="{F22894DE-0800-4016-8681-CAD5DDC85DC1}" WorkUnitID="{331BD20D-8565-47C0-9DBB-9A39EF2DE1C8}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_common_env_chapter1_amb_01" ID="{CCFB6D0E-9FC0-4097-9B09-A413051ABEBE}" WorkUnitID="{331BD20D-8565-47C0-9DBB-9A39EF2DE1C8}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_common_plr_player_dive" ID="{7CFC9492-B12B-4349-84C3-3FDE576B0F56}" WorkUnitID="{331BD20D-8565-47C0-9DBB-9A39EF2DE1C8}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_common_plr_player_jump" ID="{5C549735-BF5E-43E5-AA27-F4D3F500983D}" WorkUnitID="{331BD20D-8565-47C0-9DBB-9A39EF2DE1C8}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_title_ui_menu_nav_01" ID="{D80B2594-4429-4401-86AA-072E354C59CF}" WorkUnitID="{331BD20D-8565-47C0-9DBB-9A39EF2DE1C8}" Origin="Manual" Filter="7"/>

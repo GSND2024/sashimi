@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{FFC92B62-78C8-4206-AD96-55A43EB03F83}" SchemaVersion="119" RootDocumentID="{2BC57917-78F5-4ACD-BBD6-B350200ED4F3}" ParentDocumentID="{2BC57917-78F5-4ACD-BBD6-B350200ED4F3}">
+	<InteractiveMusic>
+		<WorkUnit Name="AllMusic" ID="{FFC92B62-78C8-4206-AD96-55A43EB03F83}" OwnerID="{2BC57917-78F5-4ACD-BBD6-B350200ED4F3}" PersistMode="Nested">
+			<ChildrenList>
+				<MusicSwitchContainer Name="Scenes" ID="{983F1957-12EA-4F33-8D21-B498C315A687}" ShortID="873023168">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42EE29DA-23E4-444A-A257-03EBA0E86A95}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E5E59002-7FF5-450C-A9A0-E68998F1C565}"/>
+						</Reference>
+						<Reference Name="TransitionRoot">
+							<Custom>
+								<MusicTransition Name="Root" ID="{32001899-4F5F-41B8-9980-3297ED5C5D1F}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicTransition Name="Transition" ID="{08ACA5FE-DDB6-4FAC-8483-2F8ABD732F6C}">
+											<TransitionInfo/>
+										</MusicTransition>
+									</ChildrenList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</Custom>
+						</Reference>
+					</ReferenceList>
+					<ObjectLists>
+						<ObjectList Name="Arguments">
+							<Reference>
+								<ObjectRef Name="Title_Gameplay" ID="{9E730CBD-B5BD-40E9-B750-C18CA3038941}" WorkUnitID="{0C2E32C1-A317-4BEC-A853-2A6EB9E8D5ED}"/>
+							</Reference>
+						</ObjectList>
+						<ObjectList Name="Entries">
+							<Reference>
+								<Local>
+									<MultiSwitchEntry Name="" ID="{5A198F5F-D6DE-4EB5-88CD-7B91CBD0288E}">
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<Reference>
+													<ObjectRef Name="Title_Gameplay" ID="{9E730CBD-B5BD-40E9-B750-C18CA3038941}" WorkUnitID="{0C2E32C1-A317-4BEC-A853-2A6EB9E8D5ED}"/>
+												</Reference>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+				</MusicSwitchContainer>
+			</ChildrenList>
+		</WorkUnit>
+	</InteractiveMusic>
+</WwiseDocument>

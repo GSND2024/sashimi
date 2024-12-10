@@ -13,6 +13,7 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID PLAY_COMMON_ENV_CHAPTER1_AMB_01 = 1370963137U;
         static const AkUniqueID PLAY_COMMON_ENV_WATER_FALL_FLOW_01 = 2750027184U;
         static const AkUniqueID PLAY_COMMON_INT_DOOR_CLOSE_01 = 2859081383U;
         static const AkUniqueID PLAY_COMMON_INT_DOOR_OPEN_01 = 2242250017U;
@@ -29,6 +30,20 @@ namespace AK
         static const AkUniqueID PLAY_TITLE_UI_SETTINGSMENU_PAUSE_01 = 3080119269U;
         static const AkUniqueID PLAY_TITLE_UI_SETTINGSMENU_UNPAUSE_01 = 175821544U;
     } // namespace EVENTS
+
+    namespace SWITCHES
+    {
+        namespace TITLE_GAMEPLAY
+        {
+            static const AkUniqueID GROUP = 1127992412U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID TITLE = 3705726509U;
+            } // namespace SWITCH
+        } // namespace TITLE_GAMEPLAY
+
+    } // namespace SWITCHES
 
     namespace BANKS
     {

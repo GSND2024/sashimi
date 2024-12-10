@@ -619,6 +619,36 @@
 								<ActiveSource Name="common_env_water fall_flow_01" ID="{13AAEC0D-F390-45E4-A336-9E2890904E02}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Sound Name="common_env_chapter1_amb_01" ID="{586A99FA-5BF9-47A3-B767-3AED0E77F517}" ShortID="47042687">
+							<PropertyList>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42EE29DA-23E4-444A-A257-03EBA0E86A95}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E5E59002-7FF5-450C-A9A0-E68998F1C565}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="common_env_chapter1_amb_01" ID="{25502DDD-E4BD-4C18-986F-8E273F116FD4}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.346153846153846"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.213017751479285"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>common_env_chapter1_amb_01.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="332186240"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="common_env_chapter1_amb_01" ID="{25502DDD-E4BD-4C18-986F-8E273F116FD4}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>
