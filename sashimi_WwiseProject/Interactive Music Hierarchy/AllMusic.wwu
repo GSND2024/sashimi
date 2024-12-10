@@ -27,6 +27,283 @@
 							</Custom>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<MusicPlaylistContainer Name="Chapter1_Explore_Music" ID="{E5C948D8-9989-49F7-AFDC-6AA853821623}" ShortID="397300167">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42EE29DA-23E4-444A-A257-03EBA0E86A95}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E5E59002-7FF5-450C-A9A0-E68998F1C565}"/>
+								</Reference>
+								<Reference Name="PlaylistRoot">
+									<Custom>
+										<MusicPlaylistItem Name="" ID="{BF402DB7-7146-494D-A6A5-AD6A57AE20AD}" ShortID="112233066">
+											<ChildrenList>
+												<MusicPlaylistItem Name="" ID="{50B409B9-72DA-4B1A-A458-E13933B49966}" ShortID="602008291">
+													<PropertyList>
+														<Property Name="LoopCount" Type="int16" Value="0"/>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Segment">
+															<ObjectRef Name="Shasimi_C1Theme" ID="{32FFB8E2-C793-4724-B1A5-29FF1F8F2270}" WorkUnitID="{FFC92B62-78C8-4206-AD96-55A43EB03F83}"/>
+														</Reference>
+													</ReferenceList>
+												</MusicPlaylistItem>
+											</ChildrenList>
+										</MusicPlaylistItem>
+									</Custom>
+								</Reference>
+								<Reference Name="TransitionRoot">
+									<Custom>
+										<MusicTransition Name="Root" ID="{D9F7F650-3AD6-4E19-BD44-C303825CFCD4}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicTransition Name="Transition" ID="{C34060EA-D1D3-4FF2-8344-C80CF1092B3B}">
+													<TransitionInfo/>
+												</MusicTransition>
+											</ChildrenList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</Custom>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicSegment Name="Shasimi_C1Theme" ID="{32FFB8E2-C793-4724-B1A5-29FF1F8F2270}" ShortID="791136129">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="106666.666666667"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-17</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42EE29DA-23E4-444A-A257-03EBA0E86A95}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E5E59002-7FF5-450C-A9A0-E68998F1C565}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="Shasimi_C1Theme" ID="{8D18E524-CC6B-4B9F-A0B1-76C9BC2DCCF4}" ShortID="940922630">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E5E59002-7FF5-450C-A9A0-E68998F1C565}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{D35C35E5-82F9-4767-8B91-25BCAC256B86}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Shasimi_C1Theme" ID="{C4399EA3-190C-46B7-990C-001B687600F9}">
+													<Language>SFX</Language>
+													<AudioFile>Shasimi_C1Theme.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="291996661"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{EC227128-44BC-4934-A4D7-708B95B5FCD4}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="Shasimi_C1Theme" ID="{F4B57D0C-DDAE-4EA1-B8E5-A4AF9D3C7A99}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="106666.666666667"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="Shasimi_C1Theme" ID="{C4399EA3-190C-46B7-990C-001B687600F9}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<Reference>
+												<Local>
+													<MusicCue Name="Entry Cue" ID="{C9B498AA-4E2E-457D-9CDC-74E1065AA1DD}"/>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Exit Cue" ID="{126A5266-9800-46F9-A772-3E1EBCA30B38}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="106666.666666667"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicSegment>
+							</ChildrenList>
+						</MusicPlaylistContainer>
+						<MusicPlaylistContainer Name="TitleScreen_Music" ID="{A31865A8-934B-40A1-B592-B2AEBB399250}" ShortID="407625697">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42EE29DA-23E4-444A-A257-03EBA0E86A95}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E5E59002-7FF5-450C-A9A0-E68998F1C565}"/>
+								</Reference>
+								<Reference Name="PlaylistRoot">
+									<Custom>
+										<MusicPlaylistItem Name="" ID="{7A4E58B4-550D-4B7C-BC45-47F69E88284B}" ShortID="313196676">
+											<ChildrenList>
+												<MusicPlaylistItem Name="" ID="{572D5D23-4B4A-42EB-81CA-73E765DAA35F}" ShortID="581138959">
+													<PropertyList>
+														<Property Name="LoopCount" Type="int16" Value="0"/>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Segment">
+															<ObjectRef Name="Shasimi_MainTheme_Screen_UI" ID="{A72666DA-A9A1-46F2-BEA6-AF0D171DC57C}" WorkUnitID="{FFC92B62-78C8-4206-AD96-55A43EB03F83}"/>
+														</Reference>
+													</ReferenceList>
+												</MusicPlaylistItem>
+											</ChildrenList>
+										</MusicPlaylistItem>
+									</Custom>
+								</Reference>
+								<Reference Name="TransitionRoot">
+									<Custom>
+										<MusicTransition Name="Root" ID="{46B14D6B-48C4-4F0D-8BC2-CEED4EE8A1A1}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicTransition Name="Transition" ID="{C025F7DB-1AC9-4E3B-B263-D8FF73029D6A}">
+													<TransitionInfo/>
+												</MusicTransition>
+											</ChildrenList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</Custom>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicSegment Name="Shasimi_MainTheme_Screen_UI" ID="{A72666DA-A9A1-46F2-BEA6-AF0D171DC57C}" ShortID="646423473">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="89142.8571428571"/>
+										<Property Name="OverrideClockSettings" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-12</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42EE29DA-23E4-444A-A257-03EBA0E86A95}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E5E59002-7FF5-450C-A9A0-E68998F1C565}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="Shasimi_MainTheme_Screen_UI" ID="{25C6D40E-95BF-4D7F-8E03-3C0990B60FB1}" ShortID="542442644">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E5E59002-7FF5-450C-A9A0-E68998F1C565}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{A0DF3A44-FF0A-45AB-A990-AF7EBBD12E52}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Shasimi_MainTheme_Screen_UI" ID="{562D60F1-5891-4639-B618-BBA505A8BA70}">
+													<Language>SFX</Language>
+													<AudioFile>Shasimi_MainTheme_Screen_UI.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="634904621"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{40796BC7-9E56-4A8C-B19F-B9AFE62ECB04}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="Shasimi_MainTheme_Screen_UI" ID="{5E3102C6-5207-4863-A56B-2B35003988A9}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="89142.8571428571"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="Shasimi_MainTheme_Screen_UI" ID="{562D60F1-5891-4639-B618-BBA505A8BA70}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<Reference>
+												<Local>
+													<MusicCue Name="Entry Cue" ID="{31060AF4-FABA-4040-A00E-3ED646123EF5}"/>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Exit Cue" ID="{5D1D3F07-A009-49FB-8219-5D477A48FB06}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="89142.8571428571"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicSegment>
+							</ChildrenList>
+						</MusicPlaylistContainer>
+					</ChildrenList>
 					<ObjectLists>
 						<ObjectList Name="Arguments">
 							<Reference>

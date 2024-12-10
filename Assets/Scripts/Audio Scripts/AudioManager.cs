@@ -15,7 +15,6 @@ public class AudioManager : MonoBehaviour
     public AK.Wwise.Event playerJump;
     public AK.Wwise.Event playerDive;
     public AK.Wwise.Event playerDeath;
-    public AK.Wwise.Event playerPowerup;
 
     [Header("Interaction Events")]
     public AK.Wwise.Event doorOpen;
@@ -38,6 +37,7 @@ public class AudioManager : MonoBehaviour
         Instance = this;
         DontDestroyOnLoad(gameObject); // Persist between scenes.
     }
+
 
     /// <summary>
     /// Plays a Wwise event.
@@ -63,7 +63,6 @@ public class AudioManager : MonoBehaviour
     public void PlayPlayerJump(GameObject player) => PlayEvent(playerJump, player);
     public void PlayPlayerDive(GameObject player) => PlayEvent(playerDive, player);
     public void PlayPlayerDeath(GameObject player) => PlayEvent(playerDeath, player);
-    public void PlayPlayerPowerup(GameObject player) => PlayEvent(playerPowerup, player);
 
     public void PlayDoorOpen(GameObject door) => PlayEvent(doorOpen, door);
     public void PlayDoorClose(GameObject door) => PlayEvent(doorClose, door);
@@ -85,7 +84,6 @@ public class AudioManager : MonoBehaviour
         Debug.Log($"Player Jump: {playerJump}");
         Debug.Log($"Player Dive: {playerDive}");
         Debug.Log($"Player Death: {playerDeath}");
-        Debug.Log($"Player Powerup: {playerPowerup}");
         Debug.Log($"Door Open: {doorOpen}");
         Debug.Log($"Door Close: {doorClose}");
         Debug.Log($"Rock Impact: {rockImpact}");

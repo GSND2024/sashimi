@@ -621,6 +621,7 @@
 						</Sound>
 						<Sound Name="common_env_chapter1_amb_01" ID="{586A99FA-5BF9-47A3-B767-3AED0E77F517}" ShortID="47042687">
 							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>

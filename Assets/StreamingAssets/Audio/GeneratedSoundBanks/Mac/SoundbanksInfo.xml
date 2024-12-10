@@ -29,7 +29,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3342588750" Type="User" Language="SFX" Hash="{F955FB51-B6EF-28BF-E743-E1DFA54D6BF6}">
+		<SoundBank Id="3342588750" Type="User" Language="SFX" Hash="{07C66435-9FB6-84C9-95E8-A297F297EA56}">
 			<ShortName>All_SFX</ShortName>
 			<Path>All_SFX.bnk</Path>
 			<Media>
@@ -49,9 +49,13 @@
 					<ShortName>title_ui_menu_nav_01.wav</ShortName>
 					<CachePath>SFX/title_ui_menu_nav_01_8F8B27E2.wem</CachePath>
 				</File>
+				<File Id="291996661" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Shasimi_C1Theme.wav</ShortName>
+					<CachePath>SFX/Shasimi_C1Theme_C4CC260C.wem</CachePath>
+				</File>
 				<File Id="332186240" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>common_env_chapter1_amb_01.wav</ShortName>
-					<CachePath>SFX/common_env_chapter1_amb_01_40E13586.wem</CachePath>
+					<CachePath>SFX/common_env_chapter1_amb_01_B0142416.wem</CachePath>
 				</File>
 				<File Id="388277311" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>common_plr_player_dive_01.wav</ShortName>
@@ -80,6 +84,10 @@
 				<File Id="576064279" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>common_plr_flyingfish_glide_01.wav</ShortName>
 					<CachePath>SFX/common_plr_flyingfish_glide_01_8F8B27E2.wem</CachePath>
+				</File>
+				<File Id="634904621" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Shasimi_MainTheme_Screen_UI.wav</ShortName>
+					<CachePath>SFX/Shasimi_MainTheme_Screen_UI_C4CC260C.wem</CachePath>
 				</File>
 				<File Id="673442626" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>common_env_water fall_flow_01.wav</ShortName>
@@ -131,7 +139,12 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="1370963137" Name="Play_common_env_chapter1_amb_01" DurationType="OneShot" DurationMin="36" DurationMax="36">
+				<Event Id="462220086" Name="Play_Chapter1_Explore_Music" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="291996661"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1370963137" Name="Play_common_env_chapter1_amb_01" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="332186240"/>
 					</MediaRefs>
@@ -219,8 +232,13 @@
 						<MediaRef Id="685455157"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="2440491800" Name="Play_TitleScreen_Music" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="634904621"/>
+					</MediaRefs>
+				</Event>
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{5B511B28-5BD2-6BEB-B02C-7C0EDEB4605C}</FileHash>
+	<FileHash>{51F107A5-409D-8292-2F35-975E7E96987D}</FileHash>
 </SoundBanksInfo>

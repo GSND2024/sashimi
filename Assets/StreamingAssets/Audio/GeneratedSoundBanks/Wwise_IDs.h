@@ -13,6 +13,7 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID PLAY_CHAPTER1_EXPLORE_MUSIC = 462220086U;
         static const AkUniqueID PLAY_COMMON_ENV_CHAPTER1_AMB_01 = 1370963137U;
         static const AkUniqueID PLAY_COMMON_ENV_WATER_FALL_FLOW_01 = 2750027184U;
         static const AkUniqueID PLAY_COMMON_INT_DOOR_CLOSE_01 = 2859081383U;
@@ -29,6 +30,7 @@ namespace AK
         static const AkUniqueID PLAY_TITLE_UI_MENU_SELECT_01 = 1749636642U;
         static const AkUniqueID PLAY_TITLE_UI_SETTINGSMENU_PAUSE_01 = 3080119269U;
         static const AkUniqueID PLAY_TITLE_UI_SETTINGSMENU_UNPAUSE_01 = 175821544U;
+        static const AkUniqueID PLAY_TITLESCREEN_MUSIC = 2440491800U;
     } // namespace EVENTS
 
     namespace SWITCHES

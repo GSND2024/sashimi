@@ -179,6 +179,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_TitleScreen_Music" ID="{4B41BB8F-17CA-4090-A383-7E70CAE87191}">
+					<ChildrenList>
+						<Action Name="" ID="{955CE78E-4E4B-41D8-82D5-D2BCD07E641E}" ShortID="687285472">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="TitleScreen_Music" ID="{A31865A8-934B-40A1-B592-B2AEBB399250}" WorkUnitID="{FFC92B62-78C8-4206-AD96-55A43EB03F83}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Chapter1_Explore_Music" ID="{F17297CC-91CD-4CF0-AF77-25DD05019BB7}">
+					<ChildrenList>
+						<Action Name="" ID="{81D54506-E154-4CE4-B16D-41B03748DD8C}" ShortID="808054938">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Chapter1_Explore_Music" ID="{E5C948D8-9989-49F7-AFDC-6AA853821623}" WorkUnitID="{FFC92B62-78C8-4206-AD96-55A43EB03F83}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

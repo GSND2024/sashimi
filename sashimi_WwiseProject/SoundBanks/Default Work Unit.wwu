@@ -6,6 +6,7 @@
 				<SoundBank Name="All_SFX" ID="{B66040ED-F1C5-42A0-B087-7B9794EBEDD0}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Play_common_plr_flyingfish_glide" ID="{F22894DE-0800-4016-8681-CAD5DDC85DC1}" WorkUnitID="{331BD20D-8565-47C0-9DBB-9A39EF2DE1C8}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_TitleScreen_Music" ID="{4B41BB8F-17CA-4090-A383-7E70CAE87191}" WorkUnitID="{331BD20D-8565-47C0-9DBB-9A39EF2DE1C8}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_common_env_chapter1_amb_01" ID="{CCFB6D0E-9FC0-4097-9B09-A413051ABEBE}" WorkUnitID="{331BD20D-8565-47C0-9DBB-9A39EF2DE1C8}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_common_plr_player_dive" ID="{7CFC9492-B12B-4349-84C3-3FDE576B0F56}" WorkUnitID="{331BD20D-8565-47C0-9DBB-9A39EF2DE1C8}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_common_plr_player_jump" ID="{5C549735-BF5E-43E5-AA27-F4D3F500983D}" WorkUnitID="{331BD20D-8565-47C0-9DBB-9A39EF2DE1C8}" Origin="Manual" Filter="7"/>
@@ -18,6 +19,7 @@
 						<ObjectRef Name="Play_common_plr_player_death_01" ID="{5ED4D685-2432-4C7F-BD94-2D7263703154}" WorkUnitID="{331BD20D-8565-47C0-9DBB-9A39EF2DE1C8}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_common_plr_player_swim_01" ID="{F0A4FD6F-880A-4CC8-AEBB-7042027E720E}" WorkUnitID="{331BD20D-8565-47C0-9DBB-9A39EF2DE1C8}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_common_int_rock_impact" ID="{DA5BDD36-5008-4CED-8258-D2812539C893}" WorkUnitID="{331BD20D-8565-47C0-9DBB-9A39EF2DE1C8}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Chapter1_Explore_Music" ID="{F17297CC-91CD-4CF0-AF77-25DD05019BB7}" WorkUnitID="{331BD20D-8565-47C0-9DBB-9A39EF2DE1C8}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_common_int_rock_roll_01" ID="{91BFFE02-085C-4E97-B6AE-F96C8D7918B5}" WorkUnitID="{331BD20D-8565-47C0-9DBB-9A39EF2DE1C8}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_title_ui_settingsmenu_unpause_01" ID="{EB5DF7BD-0086-4EAB-B295-692860BDAA69}" WorkUnitID="{331BD20D-8565-47C0-9DBB-9A39EF2DE1C8}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_common_env_water_fall_flow_01" ID="{BB702A58-B5E8-4F82-8086-F6A2CEA34248}" WorkUnitID="{331BD20D-8565-47C0-9DBB-9A39EF2DE1C8}" Origin="Manual" Filter="7"/>

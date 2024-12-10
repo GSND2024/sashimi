@@ -988,6 +988,7 @@ GameObject:
   - component: {fileID: 874943260}
   - component: {fileID: 874943259}
   - component: {fileID: 874943261}
+  - component: {fileID: 874943262}
   m_Layer: 0
   m_Name: WwiseGlobal
   m_TagString: Untagged
@@ -1060,6 +1061,58 @@ MonoBehaviour:
   unloadTriggerList: 958ca0ea
   bankNameInternal: 
   valueGuidInternal: 
+--- !u!114 &874943262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 874943258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8dff20b624a92341b47721f6986c754, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerSwim:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 3ae972cb4120e9c4a84b9a8462346f41, type: 2}
+  playerJump:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: e91093c448f322141824c04c14102ac8, type: 2}
+  playerDive:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: b39ea4355b84a904d89d071976d5041d, type: 2}
+  playerDeath:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: a47f0665d2f61a943b684952319ce275, type: 2}
+  doorOpen:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 895976741ea9088498ffdaf3381d3e74, type: 2}
+  doorClose:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 5cb8ae0ff7aaec549a2d1e100bd8df71, type: 2}
+  rockImpact:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 6c3f4e0a0183dae478c4c8a0462c877e, type: 2}
+  rockRoll:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: eded3cb80f1a171478aa44396a993dfd, type: 2}
+  waterfallFlow:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: aa155d9a36148504eaf3c0600d96aa90, type: 2}
+  chapter1Ambient:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 9afa5d1bc4a3fe14d9485d1800399a9f, type: 2}
 --- !u!1 &917916466
 GameObject:
   m_ObjectHideFlags: 0

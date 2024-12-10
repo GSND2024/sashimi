@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2edd960f94d1852439cc26d163399f6f, type: 3}
+  m_Name: 1F7A41A2-0DB6-4B29-9D5C-17FF07A75775
+  m_EditorClassIdentifier: 
+  objectName: Play_common_int_door_close_01
+  id: 2859081383
+  guid: 1F7A41A2-0DB6-4B29-9D5C-17FF07A75775
