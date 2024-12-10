@@ -37,4 +37,29 @@ public class MainMenu : MonoBehaviour
         settingMenu.SetActive(false);
     }
 
+    public void BackButton()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
+
+    public void Restart()
+    {
+        int level = PlayerPrefs.GetInt("levelCounter");
+
+        if(level == 0)
+        {
+            PlayerPrefs.SetInt("roomCounter1", 0);
+            PlayerPrefs.SetInt("roomCounter2", 0);
+            SceneManager.LoadScene("Chapter1");
+        }
+        else if(level == 1)
+        {
+            PlayerPrefs.SetInt("roomCounter1", 0);
+            PlayerPrefs.SetInt("roomCounter2", 0);
+            SceneManager.LoadScene("Chapter2");
+        }
+
+
+    }
+
 }

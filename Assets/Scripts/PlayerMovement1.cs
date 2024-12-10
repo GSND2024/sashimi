@@ -34,9 +34,12 @@ public class PlayerMovement1 : MonoBehaviour
 
     public Camera cam;
 
+    public GameObject settingMenu;
+
     // Start is called before the first frame update
     void Start()
     {
+          PlayerPrefs.SetInt("levelCounter", 0);
           int roomCounter = PlayerPrefs.GetInt("roomCounter1");
 
           //Debug.Log(roomCounter);
@@ -112,6 +115,10 @@ public class PlayerMovement1 : MonoBehaviour
             transform.GetChild(2).SetParent(null);      
         }
 
+         if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            settingMenu.SetActive(!settingMenu.activeSelf);
+        }
 
     }
 

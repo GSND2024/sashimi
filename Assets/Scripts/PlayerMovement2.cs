@@ -32,13 +32,16 @@ public class PlayerMovement2 : MonoBehaviour
 
     public bool isG = false;
 
-     public Camera cam;
+    public Camera cam;
+
+    public GameObject settingMenu;
+
 
     // Start is called before the first frame update
     void Start()
     {
+        PlayerPrefs.SetInt("levelCounter", 1);
         int roomCounter = PlayerPrefs.GetInt("roomCounter2");
-        Debug.Log(roomCounter);
         
         if (roomCounter == 0)
             {
@@ -114,6 +117,11 @@ public class PlayerMovement2 : MonoBehaviour
             }    
         }
 
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            settingMenu.SetActive(!settingMenu.activeSelf);
+        }
+
 
     }
 
@@ -164,9 +172,9 @@ public class PlayerMovement2 : MonoBehaviour
 
         }
 
-        if (other.gameObject.CompareTag("nextLevel"))
+        if (other.gameObject.CompareTag("end"))
         {
-             SceneManager.LoadScene("Chapter2");
+             SceneManager.LoadScene("Credits");
         }
 
         if (other.gameObject.CompareTag("water")) {
@@ -190,6 +198,8 @@ public class PlayerMovement2 : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D other)
 
     {
+
+
         if (other.gameObject.CompareTag("ground") && inWater == false)
         {
             ReloadScene();
