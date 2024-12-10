@@ -46,7 +46,9 @@ public class NewBehaviourScript : MonoBehaviour
 
             if((isPlayer == false) && (isRock == false))
             {
-                door.SetActive(true);
+                if (door != null) {
+                    door.SetActive(true);
+                }
                 if (spawn != null) {
                     spawn.SetActive(false);
                 }
