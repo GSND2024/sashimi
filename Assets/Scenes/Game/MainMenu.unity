@@ -1478,6 +1478,10 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 3ae972cb4120e9c4a84b9a8462346f41, type: 2}
+  playerSwimStop:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 33006e01188f3fa44bfab2f11ed2f188, type: 2}
   playerJump:
     idInternal: 0
     valueGuidInternal: 
