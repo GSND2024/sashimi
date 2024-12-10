@@ -32,7 +32,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="3342588750" Type="User" Language="SFX" Hash="{1A6C8285-5A57-F0B8-2DEA-492DB08F8927}">
+		<SoundBank Id="3342588750" Type="User" Language="SFX" Hash="{8572B4C2-5FA7-D8B0-0D8F-C56BB66572D6}">
 			<ShortName>All_SFX</ShortName>
 			<Path>All_SFX.bnk</Path>
 			<Media>
@@ -42,7 +42,7 @@
 				</File>
 				<File Id="147384092" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>common_plr_player_swim_01.wav</ShortName>
-					<CachePath>SFX/common_plr_player_swim_01_00360749.wem</CachePath>
+					<CachePath>SFX/common_plr_player_swim_01_9A19CE44.wem</CachePath>
 				</File>
 				<File Id="183307966" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>common_plr_player_dive_02.wav</ShortName>
@@ -67,6 +67,10 @@
 				<File Id="388277311" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>common_plr_player_dive_01.wav</ShortName>
 					<CachePath>SFX/common_plr_player_dive_01_0A2F5C74.wem</CachePath>
+				</File>
+				<File Id="394423304" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>common_plr_player_swim_01.wav</ShortName>
+					<CachePath>SFX/common_plr_player_swim_01_800FBE0E.wem</CachePath>
 				</File>
 				<File Id="425912349" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>common_plr_flyingfish_glide_03.wav</ShortName>
@@ -241,6 +245,11 @@
 						<MediaRef Id="147384092"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="3266025595" Name="Play_common_plr_player_swim_end" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="394423304"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="1581394617" Name="Play_title_ui_menu_back_01" DurationType="OneShot" DurationMin="0.5" DurationMax="0.5">
 					<MediaRefs>
 						<MediaRef Id="1058969932"/>
@@ -271,6 +280,11 @@
 						<MediaRef Id="634904621"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="537788727" Name="Stop_common_plr_player_swim_01" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<ActionPostEvent>
+						<ActionPostEventEntry Id="3266025595" Name="Play_common_plr_player_swim_end"/>
+					</ActionPostEvent>
+				</Event>
 			</Events>
 			<StateGroups>
 				<StateGroup Id="3826569560" Name="Music_State">
@@ -284,5 +298,5 @@
 			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{819F3D46-498F-1A70-D5BD-5DD657076B6F}</FileHash>
+	<FileHash>{571919B3-2AAE-8170-F047-A7207F6F5828}</FileHash>
 </SoundBanksInfo>

@@ -12,6 +12,7 @@
 						<ObjectRef Name="Play_common_plr_player_jump" ID="{5C549735-BF5E-43E5-AA27-F4D3F500983D}" WorkUnitID="{331BD20D-8565-47C0-9DBB-9A39EF2DE1C8}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_title_ui_menu_nav_01" ID="{D80B2594-4429-4401-86AA-072E354C59CF}" WorkUnitID="{331BD20D-8565-47C0-9DBB-9A39EF2DE1C8}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Chapter1_Explore_Music" ID="{CA78441A-D78B-4548-B7D5-0DB8377A6180}" WorkUnitID="{331BD20D-8565-47C0-9DBB-9A39EF2DE1C8}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop_common_plr_player_swim_01" ID="{A3CFA62D-8C05-4573-A4E6-B2156EA68C95}" WorkUnitID="{331BD20D-8565-47C0-9DBB-9A39EF2DE1C8}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_title_ui_settingsmenu_pause_01" ID="{EFA53DE9-5BBD-4670-9B23-CD6F9BC0A00B}" WorkUnitID="{331BD20D-8565-47C0-9DBB-9A39EF2DE1C8}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_common_int_door_open_01" ID="{664B3566-77AC-4680-B417-FF859F75A902}" WorkUnitID="{331BD20D-8565-47C0-9DBB-9A39EF2DE1C8}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_title_ui_menu_select_01" ID="{6506AA7D-B5A1-4813-8F89-6B529890089E}" WorkUnitID="{331BD20D-8565-47C0-9DBB-9A39EF2DE1C8}" Origin="Manual" Filter="7"/>

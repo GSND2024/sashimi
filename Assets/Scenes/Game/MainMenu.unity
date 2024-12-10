@@ -1490,6 +1490,10 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: a47f0665d2f61a943b684952319ce275, type: 2}
+  playerGlide:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 9dae4badd9cfb0e4c96c9bab36eeebce, type: 2}
   doorOpen:
     idInternal: 0
     valueGuidInternal: 

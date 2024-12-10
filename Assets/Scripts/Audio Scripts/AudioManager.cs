@@ -13,9 +13,11 @@ public class AudioManager : MonoBehaviour
 
     [Header("Player Events")]
     public AK.Wwise.Event playerSwim;
+    public AK.Wwise.Event playerSwimStop;
     public AK.Wwise.Event playerJump;
     public AK.Wwise.Event playerDive;
     public AK.Wwise.Event playerDeath;
+    public AK.Wwise.Event playerGlide;
 
     [Header("Interaction Events")]
     public AK.Wwise.Event doorOpen;
@@ -70,11 +72,15 @@ public class AudioManager : MonoBehaviour
         akEvent.Post(gameObject);
     }
 
+
     // Wrapper methods for specific game audio events.
     public void PlayPlayerSwim(GameObject player) => PlayEvent(playerSwim, player);
+    public void StopPlayerSwim(GameObject player) => PlayEvent(playerSwimStop, player);
+
     public void PlayPlayerJump(GameObject player) => PlayEvent(playerJump, player);
     public void PlayPlayerDive(GameObject player) => PlayEvent(playerDive, player);
     public void PlayPlayerDeath(GameObject player) => PlayEvent(playerDeath, player);
+    public void PlayPlayerGlide(GameObject player) => PlayEvent(playerGlide, player);
 
     public void PlayDoorOpen(GameObject door) => PlayEvent(doorOpen, door);
     public void PlayDoorClose(GameObject door) => PlayEvent(doorClose, door);
@@ -95,6 +101,7 @@ public class AudioManager : MonoBehaviour
         Debug.Log($"Player Swim: {playerSwim}");
         Debug.Log($"Player Jump: {playerJump}");
         Debug.Log($"Player Dive: {playerDive}");
+        Debug.Log($"Player Dive: {playerGlide}");
         Debug.Log($"Player Death: {playerDeath}");
         Debug.Log($"Door Open: {doorOpen}");
         Debug.Log($"Door Close: {doorClose}");

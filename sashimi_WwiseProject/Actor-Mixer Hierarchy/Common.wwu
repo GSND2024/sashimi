@@ -46,13 +46,13 @@
 							<PropertyList>
 								<Property Name="Highpass" Type="int16">
 									<ValueList>
-										<Value>31</Value>
+										<Value>32</Value>
 									</ValueList>
 								</Property>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-6</Value>
+										<Value>9</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -67,10 +67,10 @@
 							<ChildrenList>
 								<AudioFileSource Name="common_plr_player_swim_01" ID="{E734DAD5-4F68-4A07-BFA6-E6578EC9C289}">
 									<PropertyList>
-										<Property Name="FadeInDuration" Type="Real64" Value="0.342178770949721"/>
-										<Property Name="FadeOutDuration" Type="Real64" Value="0.273743016759777"/>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.0524522373207482"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.0874902451411524"/>
 										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-										<Property Name="TrimBegin" Type="Real64" Value="0.400837988826816"/>
+										<Property Name="TrimBegin" Type="Real64" Value="1.36314397552305"/>
 									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>common_plr_player_swim_01.wav</AudioFile>
@@ -378,6 +378,41 @@
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
+						<Sound Name="common_plr_player_swim_end" ID="{77023127-1740-476C-8BA1-189F2082F6D9}" ShortID="608752777">
+							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>43</Value>
+									</ValueList>
+								</Property>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{42EE29DA-23E4-444A-A257-03EBA0E86A95}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E5E59002-7FF5-450C-A9A0-E68998F1C565}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="common_plr_player_swim_01" ID="{FC2043DC-5C73-460C-B9C1-6CDB9D8F19DC}">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.933973541106662"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="12.9108158158778"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>common_plr_player_swim_01.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="394423304"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="common_plr_player_swim_01" ID="{FC2043DC-5C73-460C-B9C1-6CDB9D8F19DC}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="Interactable" ID="{156CD5ED-9559-46E1-9691-DAD867FD460C}" ShortID="789167386">

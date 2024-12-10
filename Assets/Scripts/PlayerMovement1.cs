@@ -37,6 +37,8 @@ public class PlayerMovement1 : MonoBehaviour
 
     public GameObject settingMenu;
 
+    private bool isSwimming = true;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -79,17 +81,37 @@ public class PlayerMovement1 : MonoBehaviour
         {
             ReloadScene();
         }
+
+        // swim loop sfx logic
+        // if (isSwimming == false && Mathf.Abs(xInput) > 0) {
+
+        //     triggerSwimSfx(true);
+        //     isSwimming = true;
+        // }
+
+        // if (Mathf.Abs(xInput) == 0) {
+        //     isSwimming = false;
+        //     triggerSwimSfx(false);
+        //     Debug.Log($"xInput: {xInput}");
+        // }
+
+
         xInput = Input.GetAxis("Horizontal");
         if (xInput > 0) { isGliding = 1; }
         if (xInput <0) { isGliding = -1; }
+
         if (Mathf.Abs(xInput) > 0)
         {
             body.velocity = new Vector2(xInput * speed, body.velocity.y);
+
         }
+
+
         if (isLookingRight && xInput < 0f || !isLookingRight && xInput > 0f && cutScene == false )
         {
             Flip();
         }
+
         if (!inWater)
         {
             
@@ -113,6 +135,7 @@ public class PlayerMovement1 : MonoBehaviour
             }
 
         }
+
         if(transform.childCount == 3 && isG == false)
         {
             transform.GetChild(2).AddComponent<Rigidbody2D>();
@@ -139,6 +162,12 @@ public class PlayerMovement1 : MonoBehaviour
         body.gravityScale = 0.5f; // Reduce gravity to simulate gliding
         //body.velocity = new Vector2(body.velocity.x, -glideSpeed); // Glide down slowly
         body.velocity = new Vector2(glideHorizontalSpeed * isGliding, -glideSpeed);
+
+        // play glide sfx
+        if (AudioManager.Instance != null)
+        {
+            AudioManager.Instance.PlayPlayerGlide(player);
+        }
         
     }
 
@@ -213,33 +242,46 @@ public class PlayerMovement1 : MonoBehaviour
 
     }
 
+    private void triggerSwimSfx(bool isStart) {
+        if (AudioManager.Instance != null)
+        {
+            if (isStart) {
+                AudioManager.Instance.PlayPlayerSwim(player);
+            } else {
+                AudioManager.Instance.StopPlayerSwim(player);
+            }
+            
+        }
+    }
+
+
     bool isMoving = false;
     IEnumerator moveTo(Transform fromPosition, float duration)
-{
-    //Make sure there is only one instance of this function running
-    if (isMoving)
     {
-        yield break; ///exit if this is still running
+        //Make sure there is only one instance of this function running
+        if (isMoving)
+        {
+            yield break; ///exit if this is still running
+        }
+        isMoving = true;
+
+        float counter = 0;
+
+        //Get the current position of the object to be moved
+        Vector3 startPos = fromPosition.position;
+        Vector3 toPosition = fromPosition.position;
+        toPosition.x += 10;
+       
+
+
+        while (counter < duration)
+        {
+            counter += Time.deltaTime;
+            fromPosition.position = Vector3.Lerp(startPos, toPosition, counter / duration);
+            yield return null;
+        }
+        isMoving = false;
     }
-    isMoving = true;
-
-    float counter = 0;
-
-    //Get the current position of the object to be moved
-    Vector3 startPos = fromPosition.position;
-    Vector3 toPosition = fromPosition.position;
-    toPosition.x += 10;
-   
-
-
-    while (counter < duration)
-    {
-        counter += Time.deltaTime;
-        fromPosition.position = Vector3.Lerp(startPos, toPosition, counter / duration);
-        yield return null;
-    }
-    isMoving = false;
-}
 
     private void ReloadScene()
     {

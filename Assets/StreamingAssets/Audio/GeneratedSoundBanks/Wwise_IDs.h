@@ -27,12 +27,14 @@ namespace AK
         static const AkUniqueID PLAY_COMMON_PLR_PLAYER_DIVE = 2605310083U;
         static const AkUniqueID PLAY_COMMON_PLR_PLAYER_JUMP = 1866911637U;
         static const AkUniqueID PLAY_COMMON_PLR_PLAYER_SWIM_01 = 3811694949U;
+        static const AkUniqueID PLAY_COMMON_PLR_PLAYER_SWIM_END = 3266025595U;
         static const AkUniqueID PLAY_TITLE_UI_MENU_BACK_01 = 1581394617U;
         static const AkUniqueID PLAY_TITLE_UI_MENU_NAV_01 = 3848493319U;
         static const AkUniqueID PLAY_TITLE_UI_MENU_SELECT_01 = 1749636642U;
         static const AkUniqueID PLAY_TITLE_UI_SETTINGSMENU_PAUSE_01 = 3080119269U;
         static const AkUniqueID PLAY_TITLE_UI_SETTINGSMENU_UNPAUSE_01 = 175821544U;
         static const AkUniqueID PLAY_TITLESCREEN_MUSIC = 2440491800U;
+        static const AkUniqueID STOP_COMMON_PLR_PLAYER_SWIM_01 = 537788727U;
     } // namespace EVENTS
 
     namespace STATES

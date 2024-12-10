@@ -223,6 +223,41 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Stop_common_plr_player_swim_01" ID="{A3CFA62D-8C05-4573-A4E6-B2156EA68C95}">
+					<ChildrenList>
+						<Action Name="" ID="{86BE9A1E-CEAB-4AC1-A0D8-CE62F2AC6AB0}" ShortID="641146426">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="common_plr_player_swim_01" ID="{A6A68D91-F5C0-4F4E-9E72-05CEDC832B09}" WorkUnitID="{FA30874D-B696-4215-98C2-EA6AD79E8C44}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{D33A89E8-ABEE-45AA-BB76-FD639E380B64}" ShortID="222212971">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="41"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Play_common_plr_player_swim_end" ID="{2A889C7A-DCE2-4757-B8FA-9AA4B45F194B}" WorkUnitID="{331BD20D-8565-47C0-9DBB-9A39EF2DE1C8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_common_plr_player_swim_end" ID="{2A889C7A-DCE2-4757-B8FA-9AA4B45F194B}">
+					<ChildrenList>
+						<Action Name="" ID="{17311078-84FA-4D9A-BBA3-9EB947984621}" ShortID="871056186">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="common_plr_player_swim_end" ID="{77023127-1740-476C-8BA1-189F2082F6D9}" WorkUnitID="{FA30874D-B696-4215-98C2-EA6AD79E8C44}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

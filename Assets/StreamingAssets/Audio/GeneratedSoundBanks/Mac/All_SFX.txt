@@ -1,6 +1,7 @@
 Event	ID	Name			Wwise Object Path	Notes
 	175821544	Play_title_ui_settingsmenu_unpause_01			\Default Work Unit\Play_title_ui_settingsmenu_unpause_01	
 	462220086	Play_Chapter1_Explore_Music			\Default Work Unit\Play_Chapter1_Explore_Music	
+	537788727	Stop_common_plr_player_swim_01			\Default Work Unit\Stop_common_plr_player_swim_01	
 	653376297	Play_common_int_rock_roll_01			\Default Work Unit\Play_common_int_rock_roll_01	
 	1038838721	Play_Chapter2_Explore_Music			\Default Work Unit\Play_Chapter2_Explore_Music	
 	1370963137	Play_common_env_chapter1_amb_01			\Default Work Unit\Play_common_env_chapter1_amb_01	
@@ -16,6 +17,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	2750027184	Play_common_env_water_fall_flow_01			\Default Work Unit\Play_common_env_water_fall_flow_01	
 	2859081383	Play_common_int_door_close_01			\Default Work Unit\Play_common_int_door_close_01	
 	3080119269	Play_title_ui_settingsmenu_pause_01			\Default Work Unit\Play_title_ui_settingsmenu_pause_01	
+	3266025595	Play_common_plr_player_swim_end			\Default Work Unit\Play_common_plr_player_swim_end	
 	3811694949	Play_common_plr_player_swim_01			\Default Work Unit\Play_common_plr_player_swim_01	
 	3848493319	Play_title_ui_menu_nav_01			\Default Work Unit\Play_title_ui_menu_nav_01	
 	4282753298	Play_common_int_rock_impact			\Default Work Unit\Play_common_int_rock_impact	
@@ -31,13 +33,14 @@ State	ID	Name	State Group			Notes
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	105382696	title_ui_settingsmenu_pause_01	Y:\Git Repos\sashimi\sashimi_WwiseProject\.cache\Mac\SFX\title_ui_settingsmenu_pause_01_8F8B27E2.wem		\Actor-Mixer Hierarchy\Default Work Unit\TitleScreen\UI\title_ui_settingsmenu_pause_01		384096
-	147384092	common_plr_player_swim_01	Y:\Git Repos\sashimi\sashimi_WwiseProject\.cache\Mac\SFX\common_plr_player_swim_01_00360749.wem		\Actor-Mixer Hierarchy\Default Work Unit\Common\Player\common_plr_player_swim_01		2611136
+	147384092	common_plr_player_swim_01	Y:\Git Repos\sashimi\sashimi_WwiseProject\.cache\Mac\SFX\common_plr_player_swim_01_9A19CE44.wem		\Actor-Mixer Hierarchy\Default Work Unit\Common\Player\common_plr_player_swim_01		2426372
 	183307966	common_plr_player_dive_02	Y:\Git Repos\sashimi\sashimi_WwiseProject\.cache\Mac\SFX\common_plr_player_dive_02_1CD0F55C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Common\Player\common_plr_player_dive\common_plr_player_dive_02		194508
 	289684235	title_ui_menu_nav_01	Y:\Git Repos\sashimi\sashimi_WwiseProject\.cache\Mac\SFX\title_ui_menu_nav_01_8F8B27E2.wem		\Actor-Mixer Hierarchy\Default Work Unit\TitleScreen\UI\title_ui_menu_nav_01		96096
 	291814580	Shasimi_C2Theme	Y:\Git Repos\sashimi\sashimi_WwiseProject\.cache\Mac\SFX\Shasimi_C2Theme_C4CC260C.wem		\Interactive Music Hierarchy\Default Work Unit\AllMusic\AllScenes_Music\Chapter2_Explore_Music\Shasimi_C2Theme\Shasimi_C2Theme		18432160
 	291996661	Shasimi_C1Theme	Y:\Git Repos\sashimi\sashimi_WwiseProject\.cache\Mac\SFX\Shasimi_C1Theme_C4CC260C.wem		\Interactive Music Hierarchy\Default Work Unit\AllMusic\AllScenes_Music\Chapter1_Explore_Music\Shasimi_C1Theme\Shasimi_C1Theme		20480160
 	332186240	common_env_chapter1_amb_01	Y:\Git Repos\sashimi\sashimi_WwiseProject\.cache\Mac\SFX\common_env_chapter1_amb_01_B0142416.wem		\Actor-Mixer Hierarchy\Default Work Unit\Common\Environmental\common_env_chapter1_amb_01		6912096
 	388277311	common_plr_player_dive_01	Y:\Git Repos\sashimi\sashimi_WwiseProject\.cache\Mac\SFX\common_plr_player_dive_01_0A2F5C74.wem		\Actor-Mixer Hierarchy\Default Work Unit\Common\Player\common_plr_player_dive\common_plr_player_dive_01		189416
+	394423304	common_plr_player_swim_end	Y:\Git Repos\sashimi\sashimi_WwiseProject\.cache\Mac\SFX\common_plr_player_swim_01_800FBE0E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Common\Player\common_plr_player_swim_end		209220
 	425912349	common_plr_flyingfish_glide_03	Y:\Git Repos\sashimi\sashimi_WwiseProject\.cache\Mac\SFX\common_plr_flyingfish_glide_03_8F8B27E2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Common\Player\common_plr_flyingfish_glide\common_plr_flyingfish_glide_03		384096
 	450924752	common_int_rock_impact_03	Y:\Git Repos\sashimi\sashimi_WwiseProject\.cache\Mac\SFX\common_int_rock_impact_03_8F8B27E2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Common\Interactable\common_int_rock_impact\common_int_rock_impact_03		192096
 	461119039	common_plr_player_jump_01	Y:\Git Repos\sashimi\sashimi_WwiseProject\.cache\Mac\SFX\common_plr_player_jump_01_85FE7E7E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Common\Player\common_plr_player_jump\common_plr_player_jump_01		227760
